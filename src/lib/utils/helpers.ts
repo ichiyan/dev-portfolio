@@ -169,3 +169,14 @@ export function computeExactDuration(from: Date, to: Date = new Date()): string 
 		})
 		.join(' ');
 }
+
+export function getDatePeriod(from_date: Date, to_date?: Date): string {
+	const from = `${getMonthName(
+		from_date.getMonth()
+	)} ${from_date.getFullYear()}`;
+	const to = to_date
+		? `${getMonthName(to_date.getMonth())} ${to_date.getFullYear()}`
+		: 'Present';
+
+	return `${from} - ${to}`;
+}

@@ -4,9 +4,10 @@
 	export let name = '';
 	export let logo = '';
 	export let inverted = false;
-	export let grayscale = true;
+	export let grayscale = false;
 
-	export let href: string | undefined = undefined;
+	export let href: string | undefined = undefined; 
+
 </script>
 
 <svelte:element
@@ -21,7 +22,7 @@
 		<slot />
 	{:else}
 		<img
-			class={`w-15px h-15px ${inverted ? 'invert-100' : ''}`}
+			class={`w-20px h-20px ${inverted ? 'invert-100' : ''}`}
 			class:chip-icon-logo-inverted={$theme && inverted}
 			src={logo}
 			alt={name}
@@ -31,6 +32,8 @@
 
 <style lang="scss">
 	.chip-icon {
+		// background-color: #FAF9F6;
+
 		&:hover {
 			border-color: var(--border-hover);
 
@@ -49,8 +52,8 @@
 		}
 
 		&-logo {
-			height: 15px;
-			width: 15px;
+			height: 20px;
+			width: 20px;
 
 			&-inverted {
 				filter: invert(100);

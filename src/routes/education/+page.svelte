@@ -7,7 +7,7 @@
 
 	import { title, items } from '@data/education';
 	import type { Education } from '$lib/types';
-	import { computeExactDuration, getTimeDiff } from '$lib/utils';
+	import { computeExactDuration, getTimeDiff, getDatePeriod } from '$lib/utils';
 	import CardDivider from '$lib/components/Card/CardDivider.svelte';
 
 	let search = '';
@@ -52,13 +52,13 @@
 						<UIcon icon="i-carbon-condition-point" />
 					</div>
 					<div class="col flex-1 items-stretch">
-						<Card>
+						<Card color={education.color}>
 							<div class="flex-1 col gap-2 items-stretch">
 								<img
 									src={getAssetURL(education.logo)}
 									alt={education.organization}
-									height="50"
-									width="50"
+									height="90"
+									width="90"
 									class="mb-5"
 								/>
 								<div class="text-[1.3em]">{education.degree}</div>
@@ -71,8 +71,13 @@
 									</div>
 									<CardDivider />
 									<div class="row items-center gap-2">
+										<UIcon icon="i-carbon-calendar" classes="text-1.25em" />
+										{getDatePeriod(education.period.from, education.period.to)}
+									</div>
+									<CardDivider />
+									<div class="row items-center gap-2">
 										<UIcon icon="i-carbon-time" />
-										{computeExactDuration(education.period.from, education.period.to)}
+										{getTimeDiff(education.period.from, education.period.to)}
 									</div>
 									<CardDivider />
 								</div>

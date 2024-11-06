@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Experience } from '$lib/types';
+	import { theme } from '$lib/stores/theme';
 	import { computeExactDuration, getMonthName, getTimeDiff } from '$lib/utils/helpers';
 	import Card from '../Card/Card.svelte';
 	import CardLogo from '../Card/CardLogo.svelte';
@@ -30,6 +31,12 @@
 		{ label: experience.location, icon: 'i-carbon-location' },
 		{ label: experience.contract, icon: 'i-carbon-hourglass' }
 	] as const;
+
+
+	let currentTheme: boolean;
+
+	theme.subscribe((v) => (currentTheme = v));
+
 </script>
 
 <Card
@@ -70,13 +77,15 @@
 			</div>
 			<div class="experience-description text-[0.9em]">{experience.shortDescription}</div>
 			<div class="flex flex-row flex-wrap mt-5">
-				{#each experience.skills as skill}
-					<ChipIcon
-						logo={getAssetURL(skill.logo)}
-						name={skill.name}
-						href={`${base}/skills/${skill.slug}`}
-					/>
-				{/each}
+				{#key currentTheme}
+					{#each experience.skills as skill}
+						<ChipIcon
+							logo={getAssetURL(skill.logo)}
+							name={skill.name}
+							href={`${base}/skills/${skill.slug}`}
+						/>
+					{/each}
+				{/key}
 			</div>
 		</div>
 	</div>

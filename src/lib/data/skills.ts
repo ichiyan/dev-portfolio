@@ -96,7 +96,56 @@ export const items = [
 		logo: Assets.Svelte,
 		name: 'Svelte',
 		category: 'library'
-	})
+	}), 
+	defineSkill({
+		slug: 'java',
+		color: 'blue',
+		description: '',
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
+	}), 
+	defineSkill({
+		slug: 'spring',
+		color: 'green',
+		description: '',
+		logo: Assets.Spring,
+		name: 'Java Spring',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'hibernate',
+		color: 'brown',
+		description: '',
+		logo: Assets.Hibernate,
+		name: 'Java Hibernate',
+		category: 'orm'
+	}),
+	defineSkill({
+		slug: 'sql',
+		color: 'blue',
+		description: '',
+		logo: Assets.SQL,
+		name: 'SQL',
+		category: 'pro-lang'
+	}), 
+	defineSkill({
+		slug: 'mysql',
+		color: 'blue',
+		description: '',
+		logo: Assets.MySQL,
+		name: 'MySQL',
+		category: 'rdbms'
+	}), 
+	defineSkill({
+		slug: 'dbeaver',
+		color: 'brown',
+		description: '',
+		logo: Assets.Dbeaver,
+		name: 'Dbeaver',
+		category: 'sql-client'
+	}), 
+
 ] as const;
 
 export const title = 'Skills';

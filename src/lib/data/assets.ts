@@ -4,10 +4,14 @@ import { base } from '$app/paths';
 
 const gh = (file: string) => `${base}/logos/${file}`;
 
-const a = (light: string, dark?: string): Asset =>
-	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
+const a = (light: string, dark?: string): Asset => {
+	return dark ? { dark: gh(dark), light: gh(light) } : gh(light);
+}
 
 const Assets = {
+	DLSASMC: a('dlsasmc.jpg'),
+	USC: a('usc.svg'),
+	ASI: a('asi.svg'),
 	AWS: a('aws.svg'),
 	Bootstrap: a('bootstrap.svg'),
 	C: a('c.svg'),
@@ -47,11 +51,16 @@ const Assets = {
 	SolidJs: a('solid.svg'),
 	Electron: a('electron.png'),
 	Flutter: a('flutter.svg'),
-	Java: a('java.png'),
+	Java: a('java.svg', 'java-dark.svg'),
+	Spring: a('spring.svg'),
+	Hibernate: a('hibernate.svg'),
 	AdonisJs: a('adonis.png'),
 	Android: a('android.png'),
 	Angular: a('angular.png'),
 	PostgreSQL: a('postgres.png'),
+	SQL: a('sql.svg'),
+	MySQL: a('mysql.svg', 'mysql-dark.svg'),
+	Dbeaver: a('dbeaver.svg'),
 	Firebase: a('firebase.png'),
 	Sass: a('sass.png'),
 	Unknown: a('no-img.svg'),

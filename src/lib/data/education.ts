@@ -3,29 +3,31 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
+		degree: 'Bachelor of Science in Computer Science',
 		description: '',
-		location: 'Tunisia',
-		logo: Assets.Unknown,
+		location: 'Cebu, Philippines',
+		logo: Assets.USC,
 		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
+		organization: 'University of San Carlos',
+		period: { from: new Date(2019, 7, 12), to: new Date(2023, 4, 20) },
 		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		slug: 'usc-computer-science',
+		subjects: ['C', 'Java', 'Web Development', 'Mobile App Development', 'Algorithm', 'Data Structures'], 
+		color: 'lawngreen',
 	},
 	{
-		degree: 'PhD of Computer Science',
+		degree: 'Elementary to Senior High School (STEM)',
 		description: '',
-		location: 'USA',
-		logo: Assets.Unknown,
+		location: 'Cebu, Philippines',
+		logo: Assets.DLSASMC,
 		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		organization: 'De La Salle Andres Soriano Memorial College',
+		period: { from: new Date(2007, 5, 1), to: new Date(2019, 2, 30) },
 		shortDescription: '',
-		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
-	}
+		slug: 'dls-asmc',
+		subjects: ['Science, Technology, Engineering, Math Strand'], 
+		color: 'springgreen',
+	},
 ];
 
 export const title = 'Education';
