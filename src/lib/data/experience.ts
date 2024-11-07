@@ -11,7 +11,7 @@ export const items: Array<Experience> = [
 		type: 'Software Development',
 		location: 'Cebu, PH',
 		period: { from: new Date(2023, 4, 29), to: new Date(2023, 7, 29) },
-		skills: getSkills('reactjs', 'java', 'spring', 'hibernate', 'sql', 'mysql', 'dbeaver'),
+		skills: getSkills('js', 'reactjs', 'java', 'spring', 'hibernate', 'sql', 'mysql', 'dbeaver'),
 		name: 'Software Engineer',
 		color: 'red',
 		links: [],

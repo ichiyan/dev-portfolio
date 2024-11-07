@@ -36,6 +36,14 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
+		slug: 'python',
+		color: 'blue',
+		description: '',
+		logo: Assets.Python,
+		name: 'Python',
+		category: 'pro-lang'
+	}), 
+	defineSkill({
 		slug: 'js',
 		color: 'yellow',
 		description:
@@ -53,6 +61,30 @@ export const items = [
 		name: 'Typescript',
 		category: 'pro-lang'
 	}),
+	defineSkill({
+		slug: 'java',
+		color: 'blue',
+		description: '',
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
+	}), 
+	defineSkill({
+		slug: 'dart',
+		color: 'blue',
+		description: '',
+		logo: Assets.Dart,
+		name: 'Dart',
+		category: 'prog-lang'
+	}), 
+	defineSkill({
+		slug: 'sql',
+		color: 'blue',
+		description: '',
+		logo: Assets.SQL,
+		name: 'SQL',
+		category: 'pro-lang'
+	}), 
 	defineSkill({
 		slug: 'css',
 		color: 'blue',
@@ -98,13 +130,117 @@ export const items = [
 		category: 'library'
 	}), 
 	defineSkill({
-		slug: 'java',
+		slug: 'pytorch',
+		color: 'orange',
+		description: '',
+		logo: Assets.Pytorch,
+		name: 'Pytorch',
+		category: 'library'
+	}), 
+	defineSkill({
+		slug: 'diffusers',
+		color: 'yellow',
+		description: '',
+		logo: Assets.Huggingface,
+		name: 'Diffusers',
+		category: 'library'
+	}), 
+	defineSkill({
+		slug: 'pandas',
 		color: 'blue',
 		description: '',
-		logo: Assets.Java,
-		name: 'Java',
-		category: 'pro-lang'
+		logo: Assets.Pandas,
+		name: 'Pandas',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'scikit-learn',
+		color: 'orange',
+		description: '',
+		logo: Assets.SciKitLearn,
+		name: 'SciKit-Learn',
+		category: 'library'
 	}), 
+	defineSkill({
+		slug: 'numpy',
+		color: 'blue',
+		description: '',
+		logo: Assets.Numpy,
+		name: 'Numpy',
+		category: 'library'
+	}), 
+	defineSkill({
+		slug: 'matplotlib',
+		color: 'orange',
+		description: '',
+		logo: Assets.Matplotlib,
+		name: 'Matplotlib',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'seaborn',
+		color: 'teal',
+		description: '',
+		logo: Assets.Seaborn,
+		name: 'Seaborn',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'opencv',
+		color: 'red',
+		description: '',
+		logo: Assets.OpenCV,
+		name: 'OpenCV',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'beautiful-soup',
+		color: 'thistle',
+		description: '',
+		logo: Assets.BeautifulSoup,
+		name: 'Beautiful Soup',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'selenium',
+		color: 'red',
+		description: '',
+		logo: Assets.Selenium,
+		name: 'Selenium',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'whisper',
+		color: 'green',
+		description: '',
+		logo: Assets.OpenAI,
+		name: 'OpenAI Whisper',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'spacy',
+		color: 'blue',
+		description: '',
+		logo: Assets.Spacy,
+		name: 'spaCy',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'scrapy',
+		color: 'green',
+		description: '',
+		logo: Assets.Scrapy,
+		name: 'Scrapy',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'django',
+		color: 'green',
+		description: '',
+		logo: Assets.Django,
+		name: 'Django',
+		category: 'framework'
+	}),
 	defineSkill({
 		slug: 'spring',
 		color: 'green',
@@ -114,20 +250,12 @@ export const items = [
 		category: 'framework'
 	}),
 	defineSkill({
-		slug: 'hibernate',
-		color: 'brown',
-		description: '',
-		logo: Assets.Hibernate,
-		name: 'Java Hibernate',
-		category: 'orm'
-	}),
-	defineSkill({
-		slug: 'sql',
+		slug: 'flutter',
 		color: 'blue',
 		description: '',
-		logo: Assets.SQL,
-		name: 'SQL',
-		category: 'pro-lang'
+		logo: Assets.Flutter,
+		name: 'Flutter',
+		category: 'framework'
 	}), 
 	defineSkill({
 		slug: 'mysql',
@@ -138,6 +266,14 @@ export const items = [
 		category: 'rdbms'
 	}), 
 	defineSkill({
+		slug: 'hibernate',
+		color: 'brown',
+		description: '',
+		logo: Assets.Hibernate,
+		name: 'Java Hibernate',
+		category: 'orm'
+	}),
+	defineSkill({
 		slug: 'dbeaver',
 		color: 'brown',
 		description: '',
@@ -146,28 +282,28 @@ export const items = [
 		category: 'sql-client'
 	}), 
 	defineSkill({
-		slug: 'dart',
-		color: 'blue',
-		description: '',
-		logo: Assets.Dart,
-		name: 'Dart',
-		category: 'prog-lang'
-	}), 
-	defineSkill({
-		slug: 'flutter',
-		color: 'blue',
-		description: '',
-		logo: Assets.Flutter,
-		name: 'Flutter',
-		category: 'framework'
-	}), 
-	defineSkill({
 		slug: 'google-maps',
 		color: 'green',
 		description: '',
 		logo: Assets.GoogleMaps,
 		name: 'Google Maps API',
 		category: 'api'
+	}), 
+	defineSkill({
+		slug: 'jupyter',
+		color: 'blue',
+		description: '',
+		logo: Assets.Jupyter,
+		name: 'Jupyter',
+		category: 'app'
+	}), 
+	defineSkill({
+		slug: 'wandb',
+		color: 'yellow',
+		description: '',
+		logo: Assets.Wandb,
+		name: 'Weights & Biases',
+		category: 'platform'
 	}), 
 
 ] as const;

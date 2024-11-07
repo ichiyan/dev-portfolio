@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { computeExactDuration, countMonths, getMonthName } from '$lib/utils/helpers';
+	import { theme } from '$lib/stores/theme';
 	import Chip from '../Chip/Chip.svelte';
 	import Card from '../Card/Card.svelte';
 	import CardTitle from '../Card/CardTitle.svelte';
@@ -13,6 +14,11 @@
 	import UIcon from '../Icon/UIcon.svelte';
 
 	export let project: Project;
+	
+	let currentTheme: boolean;
+
+	theme.subscribe((v) => (currentTheme = v));
+
 	$: months = countMonths(project.period.from, project.period.to);
 	// $: period = `${months} month${months > 1 ? 's' : ''}`;
 	// $: period = `${getTimeDiff(
@@ -24,6 +30,7 @@
 	$: to = project.period.to
 		? `${getMonthName(project.period.to.getMonth())} ${project.period.to.getFullYear()}`
 		: 'now';
+
 </script>
 
 <Card color={project.color} href={`${base}/projects/${project.slug}`}>
@@ -62,12 +69,14 @@
 	</div>
 	<CardDivider />
 	<div class="row flex-wrap">
-		{#each project.skills as tech}
-			<ChipIcon
-				logo={getAssetURL(tech.logo)}
-				name={tech.name}
-				href={`${base}/skills/${tech.slug}`}
-			/>
-		{/each}
+		{#key currentTheme}
+			{#each project.skills as tech}
+				<ChipIcon
+					logo={getAssetURL(tech.logo)}
+					name={tech.name}
+					href={`${base}/skills/${tech.slug}`}
+				/>
+			{/each}
+		{/key}
 	</div>
 </Card>
