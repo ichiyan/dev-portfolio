@@ -56,10 +56,12 @@
 				</h3>
 				<div class="row flex-wrap items-start m-b-2 gap-1 text-0.9em font-300">
 					{#each info as item}
+						{#if item.label !== ''}
 						<Chip>
 							<UIcon icon={item.icon} />
 							<span class="m-l-1">{item.label}</span>
 						</Chip>
+						{/if}
 					{/each}
 				</div>
 			</div>

@@ -14,6 +14,7 @@ export const items: Array<Education> = [
 		slug: 'usc-computer-science',
 		subjects: ['C', 'Java', 'Web Development', 'Mobile App Development', 'Algorithm', 'Data Structures'], 
 		color: 'lawngreen',
+		honors: ['magna cum laude', 'cum laude caroli sancti']
 	},
 	{
 		degree: 'Elementary to Senior High School (STEM)',
@@ -27,6 +28,7 @@ export const items: Array<Education> = [
 		slug: 'dls-asmc',
 		subjects: ['Science, Technology, Engineering, Math Strand'], 
 		color: 'springgreen',
+		honors: ['valedictorian']
 	},
 ];
 

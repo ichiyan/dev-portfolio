@@ -145,6 +145,30 @@ export const items = [
 		name: 'Dbeaver',
 		category: 'sql-client'
 	}), 
+	defineSkill({
+		slug: 'dart',
+		color: 'blue',
+		description: '',
+		logo: Assets.Dart,
+		name: 'Dart',
+		category: 'prog-lang'
+	}), 
+	defineSkill({
+		slug: 'flutter',
+		color: 'blue',
+		description: '',
+		logo: Assets.Flutter,
+		name: 'Flutter',
+		category: 'framework'
+	}), 
+	defineSkill({
+		slug: 'google-maps',
+		color: 'green',
+		description: '',
+		logo: Assets.GoogleMaps,
+		name: 'Google Maps API',
+		category: 'api'
+	}), 
 
 ] as const;
 

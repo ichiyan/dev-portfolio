@@ -14,6 +14,8 @@
 
 	let result: Array<Education> = items;
 
+	let education: Education;
+
 	const onSearch = (ev: CustomEvent<{ search: string }>) => {
 		const s = ev.detail.search;
 
@@ -28,6 +30,7 @@
 			);
 		});
 	};
+
 </script>
 
 <SearchPage {title} {search} on:search={onSearch}>
@@ -80,6 +83,19 @@
 										{getTimeDiff(education.period.from, education.period.to)}
 									</div>
 									<CardDivider />
+									<div class="py-5">
+										<p>Graduated 
+											{#each education.honors as honor, i}
+												{#if i < education.honors.length - 2}
+													<i><b>{honor}</b></i>,
+												{:else if i < education.honors.length - 1}
+													<i><b>{honor }</b></i>, and
+												{:else}
+													<i><b>{" " + honor}</b></i>
+												{/if}
+											{/each}
+										</p>
+									</div>
 								</div>
 								<div class="row flex-wrap gap-1">
 									{#each education.subjects as subject}
