@@ -64,7 +64,8 @@
 									src={getAssetURL(item.logo)}
 									alt={item.name}
 									radius={'0px'}
-									size={15}
+									height={15}
+									width={15}
 									classes="mr-2"
 								/>
 								<span class="text-[0.9em]">{item.name}</span>

@@ -16,7 +16,7 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('python', 'sql', 'django', 'mysql'),
+		skills: getSkills('python', 'sql', 'django', 'mysql', 'datagrip'),
 		type: 'Web Application'
 	},
 	{
@@ -25,12 +25,13 @@ export const items: Array<Project> = [
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			`A brain activity to image reconstruction deep learning research presented during the CMLDS 2024 
+			at Singapore where we won the best presentation award.`,
 		links: [{ to: 'https://dl.acm.org/doi/10.1145/3661725.3661744', label: 'Published Paper' }],
-		logo: Assets.Unknown,
+		logo: Assets.NeuroVis,
 		name: 'Neuro-Vis: Guided fMRI-to-Image Reconstruction',
 		period: {
-			from: new Date()
+			from: new Date(2024, 3, 13)
 		},
 		skills: getSkills('python', 'pytorch',  'diffusers', 'pandas', 'scikit-learn', 'numpy', 'matplotlib', 'jupyter', 'wandb'),
 		type: 'Deep Learning Project'
@@ -43,7 +44,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
 		links: [{ to: 'https://github.com/ichiyan/Malware-Prediction', label: 'GitHub' }],
-		logo: Assets.Unknown,
+		logo: Assets.Malware,
 		name: 'Malware Prediction Exploratory Data Analysis',
 		period: {
 			from: new Date()
@@ -59,7 +60,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
 		links: [{ to: 'https://github.com/ichiyan/English-Character-Recognition', label: 'GitHub' }],
-		logo: Assets.Unknown,
+		logo: Assets.EnglishCharacters,
 		name: 'English Character Recognition',
 		period: {
 			from: new Date()
@@ -91,7 +92,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
 		links: [{ to: '', label: 'GitHub' }],
-		logo: Assets.Unknown,
+		logo: Assets.DataScraping,
 		name: 'Data Scraping',
 		period: {
 			from: new Date()
@@ -123,7 +124,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
 		links: [{ to: 'https://github.com/ichiyan/CPU-Scheduling-Algorithms-Simulation', label: 'GitHub' }],
-		logo: Assets.Unknown,
+		logo: Assets.CPU,
 		name: 'CPU Scheduling Algorithms Simulation',
 		period: {
 			from: new Date()
@@ -139,7 +140,7 @@ export const items: Array<Project> = [
 		shortDescription:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
 		links: [{ to: 'https://github.com/ichiyan/Sample-RSA-Encryption', label: 'GitHub' }],
-		logo: Assets.Unknown,
+		logo: Assets.RSA,
 		name: 'RSA Encryption',
 		period: {
 			from: new Date()
@@ -147,6 +148,166 @@ export const items: Array<Project> = [
 		skills: getSkills('python'),
 		type: 'Console Application'
 	},	
+	{
+		slug: 'chess',
+		color: 'white',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		links: [{ to: 'https://github.com/ichiyan/Chess-Java', label: 'GitHub' }],
+		logo: Assets.Chess,
+		name: 'Chess (PvP and PvC)',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('java', 'stockfish'),
+		type: 'Desktop Application'
+	},
+	{
+		slug: 'interpolation',
+		color: 'aqua',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		links: [{ to: 'https://interpolation-equally-spaced-points.netlify.app/', label: 'Site' }],
+		logo: Assets.Interpolation,
+		name: 'Numerical Interpolation Calculator',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('js', 'css', 'reactjs', 'bootstrap'),
+		type: 'Web Application'
+	},
+	{
+		slug: 'taskvenator',
+		color: 'slateblue',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		links: [{ to: 'https://github.com/ichiyan/TaskVenator', label: 'GitHub' }],
+		logo: Assets.TaskVenator,
+		name: 'TaskVenator: Gamified Productivity App',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('js', 'php', 'sql', 'sass', 'reactjs', 'bootstrap', 'socketio', 'laravel', 'mysql', 'xampp', 'phpmyadmin', 'redis'),
+		type: 'Web Application'
+	},
+	{
+		slug: 'calfitgym',
+		color: 'red',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		links: [{ to: 'https://github.com/ichiyan/CalFitGym', label: 'GitHub' }],
+		logo: Assets.CalFitGym,
+		name: 'CalFitGym',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('js', 'php', 'sql', 'css', 'bootstrap', 'laravel', 'mysql', 'xampp', 'phpmyadmin'),
+		type: 'Web Application'
+	},
+	{
+		slug: 'doggo',
+		color: 'hotpink',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		links: [{ to: 'https://github.com/ichiyan/Doggo', label: 'GitHub' }],
+		logo: Assets.Doggo,
+		name: 'Doggo',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('js', 'php', 'sql', 'css', 'sass', 'bootstrap', 'vuejs', 'laravel', 'mysql', 'xampp', 'phpmyadmin'),
+		type: 'Web Application'
+	},
+	{
+		slug: 'isekai-express',
+		color: 'royalblue',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		links: [{ to: 'https://github.com/ichiyan/Merch-Shop', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'Isekai Express: Anime Merchandise Shop',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('js', 'php', 'sql', 'css', 'bootstrap', 'laravel', 'mysql', 'xampp', 'phpmyadmin'),
+		type: 'Web Application'
+	},
+	{
+		slug: 'openwhyd',
+		color: 'royalblue',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		links: [{ to: 'https://github.com/ichiyan/Flutter-Openwhyd-API-Music-App', label: 'GitHub' }],
+		logo: Assets.Openwhyd,
+		name: 'Openwhyd: Music Streaming and Curation',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('dart', 'flutter'),
+		type: 'Mobile Application'
+	},
+	{
+		slug: 'finlit',
+		color: 'palegreen',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		links: [{ to: '', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'FinLit: Mobile Game MVP',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('dart', 'flutter', 'firebase'),
+		type: 'Mobile Application'
+	},
+	{
+		slug: 'search-and-rescue-robot',
+		color: 'silver',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		links: [{ to: '', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'Soteria: Search and Rescue Robot Prototype',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('cpp', 'delphi', 'arduino'),
+		type: 'Robotics Project'
+	},
+	{
+		slug: 'front-end',
+		color: 'silver',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		links: [{ to: '', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'Collection of Early Front-End Works',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('html', 'css', 'sass', 'js', 'photoshop'),
+		type: 'Web Application'
+	},
 	// {
 	// 	slug: 'slick-portfolio-angular',
 	// 	color: '#5e95e3',

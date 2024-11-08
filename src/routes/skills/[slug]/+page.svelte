@@ -103,7 +103,7 @@
 							classes="inline-flex flex-row items-center justify-center"
 							href={`${base}${item.url}`}
 						>
-							<CardLogo src={item.img} alt={item.name} radius={'0px'} size={15} classes="mr-2" />
+							<CardLogo src={item.img} alt={item.name} radius={'0px'} height={15} width={15} classes="mr-2" />
 							<span class="text-[0.9em]">{item.display}</span>
 						</Chip>
 					{/each}

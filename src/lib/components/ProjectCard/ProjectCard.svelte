@@ -31,10 +31,13 @@
 		? `${getMonthName(project.period.to.getMonth())} ${project.period.to.getFullYear()}`
 		: 'now';
 
+	$: from_year = 	project.period.from.getFullYear()
+    $: from_to_year = project.period.to ?  `${from_year} - ${project.period.to.getFullYear()}` : `${from_year}`
+
 </script>
 
 <Card color={project.color} href={`${base}/projects/${project.slug}`}>
-	<CardLogo alt={project.name} src={getAssetURL(project.logo)} size={40} radius={'0'} />
+	<CardLogo alt={project.name} src={getAssetURL(project.logo)} height={150} width={300} radius={'0'} />
 	<div class="m-t-20px row justify-between items-center">
 		<CardTitle title={project.name} />
 		<div class="row">
@@ -52,21 +55,22 @@
 		<CardDivider />
 		<div class="row items-center gap-2">
 			<UIcon icon="i-carbon-time" classes="text-1.25em" />
-			<p>{period}</p>
+			<!-- <p>{period}</p> -->
+			 <p>{from_to_year}</p>
 		</div>
 		<CardDivider />
 	</div>
-	<div class="col sm:h-100px md:h-160px">
-		<p class="text-[0.9em] text-[var(--secondary-text)] m-t-20px m-b-40px flex-1 line-clamp-3">
+	<div class="col sm:h-100px md:h-150px">
+		<p class="text-[0.9em] text-[var(--secondary-text)] m-t-20px m-b-20px flex-1 line-clamp-4">
 			{project.shortDescription}
 		</p>
 	</div>
-	<div class="row justify-between text-0.8em font-400">
+	<!-- <div class="row justify-between text-0.8em font-400">
 		<Chip>{from}</Chip>
 		{#if from !== to}
 			<Chip>{to}</Chip>
 		{/if}
-	</div>
+	</div> -->
 	<CardDivider />
 	<div class="row flex-wrap">
 		{#key currentTheme}
