@@ -94,7 +94,7 @@
 				</div>
 				{#if screenshots.length > 0}
 					<div
-						class="px-10px grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-t-10 "
+						class="px-10px grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-10 gap-y-15 m-t-10 "
 					>
 						{#each screenshots as item, index}
 							<!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -107,10 +107,10 @@
 								on:keyup
 							>
 								<div
-									class="screenshot aspect-video bg-contain w-100% cursor-pointer"
+									class="screenshot {data.project.aspect_ratio ? data.project.aspect_ratio : `aspect-video`} bg-contain w-100% cursor-pointer"
 									style={`background-image: url(${item.src});`}
 								/>
-								<p class="text-[var(--tertiary-text)] font-300">{item.label}</p>
+								<p class="text-[var(--tertiary-text)] font-300 line-clamp-1">{item.label}</p>
 							</div>
 						{/each}
 					</div>

@@ -86,7 +86,7 @@
 			<p class="font-300">Could not find anything...</p>
 		</div>
 	{:else}
-		<div class="projects-list mt-5">
+		<div class="projects-list mt-10">
 			{#each displayed as project}
 				<ProjectCard {project} />
 			{/each}
@@ -98,7 +98,7 @@
 	.projects-list {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
+		gap: 30px 20px;
 
 		@media (max-width: 1350px) {
 			grid-template-columns: repeat(2, 1fr);

@@ -165,8 +165,10 @@ body {
 	--code-interpolation: var(--code-keyword);
 	--code-class-name: var(--secondary-text);
 
-	font-family: 'Space Mono', monospace;
-	font-size: 14px;
+	// font-family: 'Space Mono', monospace;
+	font-size: 15px;
+	text-align: justify;
+	text-justify: inter-word;
 
 	color: var(--tertiary-text);
 	overflow-y: auto !important;

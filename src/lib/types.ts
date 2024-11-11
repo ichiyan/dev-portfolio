@@ -21,6 +21,13 @@ export enum ContractType {
 	Internship = 'Internship'
 }
 
+// tailwind css ascpect-ratio
+export enum AspectRatio {
+	Auto = 'aspect-auto',
+	Square = 'aspect-square',
+	Video = 'aspect-video'
+}
+
 export type Asset = string | { light: string; dark: string };
 
 export interface Item<S extends string = string> {
@@ -61,6 +68,8 @@ export interface Project<S extends string = string> extends Item<S> {
 	};
 	type: string;
 	skills: Array<Skill<S>>;
+	awards?: Array<string>;
+	aspect_ratio?: string | AspectRatio;  
 }
 
 export interface Experience<S extends string = string> extends Project<S> {
