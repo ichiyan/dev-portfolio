@@ -70,6 +70,7 @@ export interface Project<S extends string = string> extends Item<S> {
 	skills: Array<Skill<S>>;
 	awards?: Array<string>;
 	aspect_ratio?: string | AspectRatio;  
+	width?: string;
 }
 
 export interface Experience<S extends string = string> extends Project<S> {

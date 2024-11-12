@@ -107,7 +107,7 @@
 								on:keyup
 							>
 								<div
-									class="screenshot {data.project.aspect_ratio ? data.project.aspect_ratio : `aspect-video`} bg-contain w-100% cursor-pointer"
+									class="screenshot {data.project.aspect_ratio ? data.project.aspect_ratio : `aspect-video`} bg-contain {data.project.width ? data.project.width : 'w-100%'} cursor-pointer"
 									style={`background-image: url(${item.src});`}
 								/>
 								<p class="text-[var(--tertiary-text)] font-300 line-clamp-1">{item.label}</p>

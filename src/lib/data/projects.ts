@@ -482,39 +482,149 @@ export const items: Array<Project> = [
 			from: new Date(2021, 4, 7)
 		},
 		skills: getSkills('js', 'php', 'sql', 'css', 'sass', 'bootstrap', 'vuejs', 'laravel', 'mysql', 'xampp', 'phpmyadmin'),
-		type: 'Web Application'
+		type: 'Web Application', 
+		screenshots: [
+			{
+				label: 'landing page hero',
+				src: getFileSrc('doggo-landing-page-hero.png')
+			},
+			{
+				label: 'landing page',
+				src: getFileSrc('doggo-landing-page.png')
+			},
+			{
+				label: 'registration and log in',
+				src: getFileSrc('doggo-authentication.png')
+			},
+			{
+				label: 'PCCI member registration',
+				src: getFileSrc('doggo-register-pcci.png')
+			},
+			{
+				label: 'non-PCCI registration',
+				src: getFileSrc('doggo-register-non-pcci.png')
+			},
+			{
+				label: 'shop',
+				src: getFileSrc('doggo-shop.png')
+			},
+			{
+				label: 'post details',
+				src: getFileSrc('doggo-post-details.png')
+			},
+			{
+				label: 'user profile (all posts for PCCI members)',
+				src: getFileSrc('doggo-profile-posts.png')
+			},
+			{
+				label: 'user profile (bookmarks)',
+				src: getFileSrc('doggo-profile-bookmarks.png')
+			},
+			{
+				label: 'new post (zoomed out)',
+				src: getFileSrc('doggo-new-post.png')
+			},
+			{
+				label: 'edit post (zoomed out)',
+				src: getFileSrc('doggo-edit-post.png')
+			},
+		]
 	},
 	{
 		slug: 'isekai-express',
 		color: 'royalblue',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		description: `A simple anime merchandise shop with user authentication and CRUD (create, read, update, delete) functionalities.`,
+		shortDescription: `A simple online anime merchandise shop`,
 		links: [{ to: 'https://github.com/ichiyan/Merch-Shop', label: 'GitHub' }],
-		logo: Assets.Unknown,
+		logo: Assets.IsekaiExpress,
 		name: 'Isekai Express: Anime Merchandise Shop',
 		period: {
-			from: new Date()
+			from: new Date(2021, 8, 3)
 		},
 		skills: getSkills('js', 'php', 'sql', 'css', 'bootstrap', 'laravel', 'mysql', 'xampp', 'phpmyadmin'),
-		type: 'Web Application'
+		type: 'Web Application', 
+		screenshots: [
+			{
+				label: 'landing page hero',
+				src: getFileSrc('isekai-express-landing-page-hero.png')
+			},
+			{
+				label: 'shop',
+				src: getFileSrc('isekai-express-shop.png')
+			},
+			{
+				label: 'shop',
+				src: getFileSrc('isekai-express-shop-full.gif')
+			},
+		]
 	},
 	{
 		slug: 'openwhyd',
 		color: 'royalblue',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		description: `This is a mobile application for Openwhyd, a platform to collect & share musical gems from YouTube, SoundCloud, and more.
+		Specifically, it uses the Openwhyd API to allow users to create playlists of music tracks from various streaming platforms and to discover the music posted by other users. 
+		Through the mobile application, users can also listen to videos and audios more easily.`,
+		shortDescription: `A mobile application for Openwhyd, a platform to collect & share musical gems from YouTube, SoundCloud, and more`,
 		links: [{ to: 'https://github.com/ichiyan/Flutter-Openwhyd-API-Music-App', label: 'GitHub' }],
 		logo: Assets.Openwhyd,
 		name: 'Openwhyd: Music Streaming and Curation',
 		period: {
-			from: new Date()
+			from: new Date(2021, 5, 24)
 		},
 		skills: getSkills('dart', 'flutter'),
-		type: 'Mobile Application'
+		type: 'Mobile Application', 
+		aspect_ratio: 'aspect-[9/16]',
+		width: 'w-55%',
+		screenshots: [
+			{
+				label: 'welcome',
+				src: getFileSrc('openwhyd-landing-page.png')
+			},
+			{
+				label: 'sign up',
+				src: getFileSrc('openwhyd-sign-up.png')
+			},
+			{
+				label: 'log in',
+				src: getFileSrc('openwhyd-log-in.png')
+			},
+			{
+				label: 'home',
+				src: getFileSrc('openwhyd-home.png')
+			},
+			{
+				label: 'popular tracks',
+				src: getFileSrc('openwhyd-popular-tracks.png')
+			},
+			{
+				label: 'liked tracks',
+				src: getFileSrc('openwhyd-liked-tracks.png')
+			},
+			{
+				label: 'playlist',
+				src: getFileSrc('openwhyd-playlist.png')
+			},
+			{
+				label: 'add new playlist',
+				src: getFileSrc('openwhyd-add-playlist.png')
+			},
+			{
+				label: 'playlist tracks',
+				src: getFileSrc('openwhyd-playlist-tracks.png')
+			},
+			{
+				label: 'add new playlist track',
+				src: getFileSrc('openwhyd-add-track.png')
+			},
+			{
+				label: 'audio player',
+				src: getFileSrc('openwhyd-audio-player.png')
+			},
+			{
+				label: 'video player',
+				src: getFileSrc('openwhyd-video-player.png')
+			},
+		]
 	},
 	{
 		slug: 'finlit',
@@ -527,7 +637,7 @@ export const items: Array<Project> = [
 		logo: Assets.Unknown,
 		name: 'FinLit: Mobile Game MVP',
 		period: {
-			from: new Date()
+			from: new Date(2021, 2, 30)
 		},
 		skills: getSkills('dart', 'flutter', 'firebase'),
 		type: 'Mobile Application'
@@ -548,80 +658,22 @@ export const items: Array<Project> = [
 		skills: getSkills('cpp', 'delphi', 'arduino'),
 		type: 'Robotics Project'
 	},
-	{
-		slug: 'front-end',
-		color: 'silver',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: '', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Collection of Early Front-End Works',
-		period: {
-			from: new Date()
-		},
-		skills: getSkills('html', 'css', 'sass', 'js', 'photoshop'),
-		type: 'Web Application'
-	},
 	// {
-	// 	slug: 'slick-portfolio-angular',
-	// 	color: '#5e95e3',
+	// 	slug: 'front-end',
+	// 	color: 'silver',
 	// 	description:
 	// 		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
 	// 	shortDescription:
 	// 		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-	// 	links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+	// 	links: [{ to: '', label: 'GitHub' }],
 	// 	logo: Assets.Unknown,
-	// 	name: 'Slick Portfolio',
+	// 	name: 'Collection of Early Front-End Works',
 	// 	period: {
 	// 		from: new Date()
 	// 	},
-	// 	skills: getSkills('angular', 'ts', 'tailwind'),
-	// 	type: 'Website Template'
+	// 	skills: getSkills('html', 'css', 'sass', 'js', 'photoshop'),
+	// 	type: 'Web Application'
 	// },
-	// {
-	// 	slug: 'slick-portfolio-svelte',
-	// 	color: '#ff3e00',
-	// 	description:
-	// 		'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-	// 	shortDescription:
-	// 		'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-	// 	links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-	// 	logo: Assets.Svelte,
-	// 	name: 'Slick Portfolio',
-	// 	period: {
-	// 		from: new Date()
-	// 	},
-	// 	skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-	// 	type: 'Website Template',
-	// 	screenshots: [
-	// 		{
-	// 			label: 'screen 1',
-	// 			src: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
-	// 		},
-	// 		{
-	// 			label: '2',
-	// 			src: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
-	// 		},
-	// 		{
-	// 			label: '3',
-	// 			src: 'https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-	// 		},
-	// 		{
-	// 			label: '4',
-	// 			src: 'https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-	// 		},
-	// 		{
-	// 			label: '5',
-	// 			src: 'https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-	// 		},
-	// 		{
-	// 			label: '6',
-	// 			src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-	// 		}
-	// 	]
-	// }
 ];
 
 export const title = 'Projects';

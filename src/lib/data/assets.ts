@@ -24,6 +24,7 @@ const Assets = {
 	CalFitGym: a('calfitgym.png'),
 	Doggo: a('doggo.png'),
 	Openwhyd: a('openwhyd.png'),
+	IsekaiExpress: a('isekai-express.png'),
 	//tools
 	AWS: a('aws.svg'),
 	Bootstrap: a('bootstrap.svg'),
