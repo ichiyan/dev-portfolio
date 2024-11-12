@@ -90,3 +90,17 @@ export interface Education<S extends string = string> extends Item<S> {
 	color: Color;
 	honors: Array<string>
 }
+
+export interface Award<S extends string = string>  {
+	slug: string;
+	event: string;
+	award: string;
+	location: string;
+	period: {
+		from: Date;
+		to?: Date;
+	};
+	description: string;
+	links?: Array<Link>;
+	color: Color;
+}
