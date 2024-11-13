@@ -10,7 +10,7 @@ const categories = [
 	defineSkillCategory({ name: 'Frameworks', slug: 'framework' }),
 	defineSkillCategory({ name: 'Libraries', slug: 'library' }),
 	defineSkillCategory({ name: 'Langauges', slug: 'lang' }),
-	defineSkillCategory({ name: 'Databases', slug: 'db' }),
+	defineSkillCategory({ name: 'Database-Related', slug: 'db' }),
 	defineSkillCategory({ name: 'ORMs', slug: 'orm' }),
 	defineSkillCategory({ name: 'DevOps', slug: 'devops' }),
 	defineSkillCategory({ name: 'Testing', slug: 'test' }),
@@ -44,11 +44,19 @@ export const items = [
 		category: 'pro-lang'
 	}), 
 	defineSkill({
-		slug: 'cpp',
+		slug: 'java',
 		color: 'blue',
 		description: '',
-		logo: Assets.Cpp,
-		name: 'C++',
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
+	}), 
+	defineSkill({
+		slug: 'c',
+		color: 'blue',
+		description: '',
+		logo: Assets.C,
+		name: 'C',
 		category: 'pro-lang'
 	}), 
 	defineSkill({
@@ -70,20 +78,12 @@ export const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'java',
-		color: 'blue',
-		description: '',
-		logo: Assets.Java,
-		name: 'Java',
-		category: 'pro-lang'
-	}), 
-	defineSkill({
 		slug: 'dart',
 		color: 'blue',
 		description: '',
 		logo: Assets.Dart,
 		name: 'Dart',
-		category: 'prog-lang'
+		category: 'pro-lang'
 	}), 
 	defineSkill({
 		slug: 'sql',
@@ -102,6 +102,14 @@ export const items = [
 		category: 'pro-lang'
 	}), 
 	defineSkill({
+		slug: 'cpp',
+		color: 'blue',
+		description: '',
+		logo: Assets.Cpp,
+		name: 'C++',
+		category: 'pro-lang'
+	}), 
+	defineSkill({
 		slug: 'delphi',
 		color: 'red',
 		description: '',
@@ -110,21 +118,21 @@ export const items = [
 		category: 'pro-lang'
 	}), 
 	defineSkill({
-		slug: 'css',
-		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.CSS,
-		name: 'CSS',
-		category: 'markup-style'
-	}),
-	defineSkill({
 		slug: 'html',
 		color: 'orange',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
 		logo: Assets.HTML,
 		name: 'HTML',
+		category: 'markup-style'
+	}),
+	defineSkill({
+		slug: 'css',
+		color: 'blue',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		logo: Assets.CSS,
+		name: 'CSS',
 		category: 'markup-style'
 	}),
 	defineSkill({
@@ -142,16 +150,8 @@ export const items = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
 		logo: Assets.ReactJs,
-		name: 'React Js',
+		name: 'ReactJS',
 		category: 'library'
-	}),
-	defineSkill({
-		slug: 'vuejs',
-		color: 'green',
-		description: '',
-		logo: Assets.VueJs,
-		name: 'VueJS',
-		category: 'framework'
 	}),
 	defineSkill({
 		slug: 'svelte',
@@ -169,22 +169,6 @@ export const items = [
 		name: 'Socket.IO',
 		category: 'library'
 	}),
-	defineSkill({
-		slug: 'pytorch',
-		color: 'orange',
-		description: '',
-		logo: Assets.Pytorch,
-		name: 'Pytorch',
-		category: 'library'
-	}), 
-	defineSkill({
-		slug: 'diffusers',
-		color: 'yellow',
-		description: '',
-		logo: Assets.Huggingface,
-		name: 'Diffusers',
-		category: 'library'
-	}), 
 	defineSkill({
 		slug: 'pandas',
 		color: 'blue',
@@ -226,6 +210,22 @@ export const items = [
 		category: 'library'
 	}),
 	defineSkill({
+		slug: 'pytorch',
+		color: 'orange',
+		description: '',
+		logo: Assets.Pytorch,
+		name: 'Pytorch',
+		category: 'library'
+	}), 
+	defineSkill({
+		slug: 'diffusers',
+		color: 'yellow',
+		description: '',
+		logo: Assets.Huggingface,
+		name: 'Diffusers',
+		category: 'library'
+	}), 
+	defineSkill({
 		slug: 'opencv',
 		color: 'red',
 		description: '',
@@ -266,14 +266,6 @@ export const items = [
 		category: 'library'
 	}),
 	defineSkill({
-		slug: 'scrapy',
-		color: 'green',
-		description: '',
-		logo: Assets.Scrapy,
-		name: 'Scrapy',
-		category: 'framework'
-	}),
-	defineSkill({
 		slug: 'laravel',
 		color: 'orange',
 		description: '',
@@ -287,6 +279,14 @@ export const items = [
 		description: '',
 		logo: Assets.Django,
 		name: 'Django',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'vuejs',
+		color: 'green',
+		description: '',
+		logo: Assets.VueJs,
+		name: 'VueJS',
 		category: 'framework'
 	}),
 	defineSkill({
@@ -314,28 +314,36 @@ export const items = [
 		category: 'framework'
 	}), 
 	defineSkill({
+		slug: 'scrapy',
+		color: 'green',
+		description: '',
+		logo: Assets.Scrapy,
+		name: 'Scrapy',
+		category: 'framework'
+	}),
+	defineSkill({
 		slug: 'mysql',
 		color: 'blue',
 		description: '',
 		logo: Assets.MySQL,
 		name: 'MySQL',
-		category: 'rdbms'
+		category: 'db' //rdbms
 	}), 
-	defineSkill({
-		slug: 'hibernate',
-		color: 'brown',
-		description: '',
-		logo: Assets.Hibernate,
-		name: 'Java Hibernate',
-		category: 'orm'
-	}),
+	// defineSkill({
+	// 	slug: 'hibernate',
+	// 	color: 'brown',
+	// 	description: '',
+	// 	logo: Assets.Hibernate,
+	// 	name: 'Java Hibernate',
+	// 	category: 'orm'
+	// }),
 	defineSkill({
 		slug: 'dbeaver',
 		color: 'brown',
 		description: '',
 		logo: Assets.Dbeaver,
 		name: 'Dbeaver',
-		category: 'sql-client'
+		category: 'db' //sql-client
 	}), 
 	defineSkill({
 		slug: 'datagrip',
@@ -343,7 +351,7 @@ export const items = [
 		description: '',
 		logo: Assets.DataGrip,
 		name: 'DataGrip',
-		category: 'sql-client'
+		category: 'db' //sql-client
 	}),
 	defineSkill({
 		slug: 'xampp',
@@ -351,7 +359,7 @@ export const items = [
 		description: '',
 		logo: Assets.Xampp,
 		name: 'Xampp',
-		category: 'web server'
+		category: 'db' //web server
 	}),
 	defineSkill({
 		slug: 'phpmyadmin',
@@ -359,7 +367,7 @@ export const items = [
 		description: '',
 		logo: Assets.PhpMyAdmin,
 		name: 'phpMyAdmin',
-		category: 'sql-client'
+		category: 'db' //sql-client
 	}),
 	defineSkill({
 		slug: 'redis',
@@ -367,7 +375,7 @@ export const items = [
 		description: '',
 		logo: Assets.Redis,
 		name: 'Redis',
-		category: 'database'
+		category: 'db'
 	}),
 	defineSkill({
 		slug: 'firebase',
@@ -375,8 +383,16 @@ export const items = [
 		description: '',
 		logo: Assets.Firebase,
 		name: 'Firebase',
-		category: 'database'
+		category: 'db'
 	}),
+	defineSkill({
+		slug: 'jupyter',
+		color: 'blue',
+		description: '',
+		logo: Assets.Jupyter,
+		name: 'Jupyter',
+		category: 'app'
+	}), 
 	defineSkill({
 		slug: 'google-maps',
 		color: 'green',
@@ -394,14 +410,6 @@ export const items = [
 		category: 'api'
 	}), 
 	defineSkill({
-		slug: 'jupyter',
-		color: 'blue',
-		description: '',
-		logo: Assets.Jupyter,
-		name: 'Jupyter',
-		category: 'app'
-	}), 
-	defineSkill({
 		slug: 'wandb',
 		color: 'yellow',
 		description: '',
@@ -417,14 +425,14 @@ export const items = [
 		name: 'Arduino',
 		category: 'software'
 	}), 
-	defineSkill({
-		slug: 'photoshop',
-		color: 'blue',
-		description: '',
-		logo: Assets.Photoshop,
-		name: 'Photoshop',
-		category: ''
-	}), 
+	// defineSkill({
+	// 	slug: 'photoshop',
+	// 	color: 'blue',
+	// 	description: '',
+	// 	logo: Assets.Photoshop,
+	// 	name: 'Photoshop',
+	// 	category: ''
+	// }), 
 
 ] as const;
 
@@ -433,6 +441,10 @@ export const title = 'Skills';
 export const getSkills = (
 	...slugs: Array<StringWithAutoComplete<(typeof items)[number]['slug']>>
 ): Array<Skill> => items.filter((it) => slugs.includes(it.slug));
+
+export const getAllSkillsExcept = (
+	...slugs: Array<StringWithAutoComplete<(typeof items)[number]['slug']>>
+): Array<Skill> => items.filter((it) => !slugs.includes(it.slug));
 
 export const groupByCategory = (
 	query: string

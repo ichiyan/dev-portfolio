@@ -72,17 +72,17 @@ export interface Project<S extends string = string> extends Item<S> {
 		to?: Date;
 	};
 	types: Array<ProjectType<S>>;
-	// type: string;
 	skills: Array<Skill<S>>;
 	awards?: Array<string>;
 	aspect_ratio?: string | AspectRatio;  
 	width?: string;
 }
 
-export interface Experience<S extends string = string> extends Project<S> {
+export interface Experience<S extends string = string> extends Omit<Project<S>, 'types'>  {
 	company: string;
 	location: string;
 	contract: ContractType;
+	type: string;
 }
 
 export interface Education<S extends string = string> extends Item<S> {

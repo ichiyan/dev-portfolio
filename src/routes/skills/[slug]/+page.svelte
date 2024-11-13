@@ -6,7 +6,7 @@
 	import { base } from '$app/paths';
 	import { getAssetURL } from '$lib/data/assets';
 
-	import type { Skill } from '$lib/types';
+	import type { ProjectType, Skill } from '$lib/types';
 
 	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
 	import CardDivider from '$lib/components/Card/CardDivider.svelte';
@@ -17,6 +17,7 @@
 	import Banner from '$lib/components/Banner/Banner.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 
+
 	type Related = {
 		display: string;
 		name: string;
@@ -26,6 +27,16 @@
 	};
 
 	export let data: { skill?: Skill };
+
+
+	const getProjectType = (types: Array<ProjectType>) => {
+		let display_type = ''
+		// TO DO: format for multiple types
+		types.forEach((type) => {
+			display_type += `${type.name}`
+		})
+		return display_type
+	}
 
 	const getRelatedProjects = (): Array<Related> => {
 		const out: Array<Related> = [];
@@ -40,7 +51,7 @@
 			if (item.skills.some((tech) => tech.slug === skill.slug)) {
 				out.push({
 					img: getAssetURL(item.logo),
-					display: `${item.name} (${item.type})`,
+					display: `${item.name} (${getProjectType(item.types)})`,
 					name: item.name,
 					type: 'projects',
 					url: `/projects/${item.slug}`
