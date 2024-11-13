@@ -1,6 +1,7 @@
 import Assets from './assets';
 import { base } from '$app/paths';
 import { getSkills } from './skills';
+import { getProjectTypes } from './project-types';
 import { type Project, AspectRatio } from '../types';
 
 
@@ -21,7 +22,7 @@ export const items: Array<Project> = [
 			from: new Date()
 		},
 		skills: getSkills('python', 'sql', 'django', 'mysql', 'datagrip'),
-		type: 'Web Application'
+		types: getProjectTypes('web-application')
 	},
 	{
 		slug: 'neuro-vis',
@@ -51,7 +52,7 @@ export const items: Array<Project> = [
 			from: new Date(2024, 3, 13)
 		},
 		skills: getSkills('python', 'pytorch',  'diffusers', 'pandas', 'scikit-learn', 'numpy', 'matplotlib', 'jupyter', 'wandb'),
-		type: 'Deep Learning Project', 
+		types: getProjectTypes('data-science-project'), 
 		awards: [`CMLDS '24 Best Presenter Award`], 
 		screenshots: [
 			{
@@ -121,7 +122,7 @@ export const items: Array<Project> = [
 			from: new Date(2023, 0, 14)
 		},
 		skills: getSkills('python', 'pandas', 'scikit-learn', 'numpy', 'matplotlib', 'jupyter'),
-		type: 'Data Science Project'
+		types: getProjectTypes('data-science-project')
 	},
 	{
 		slug: 'english-character-recognition',
@@ -139,7 +140,7 @@ export const items: Array<Project> = [
 			from: new Date(2023, 1, 27)
 		},
 		skills: getSkills('python', 'pandas', 'scikit-learn', 'numpy', 'matplotlib', 'jupyter'),
-		type: 'Data Science Project', 
+		types: getProjectTypes(''), 
 		screenshots: [
 			{
 				label: 'Sample predictions using KNN',
@@ -165,7 +166,7 @@ export const items: Array<Project> = [
 			from: new Date()
 		},
 		skills: getSkills('python', 'java', 'opencv'),
-		type: 'Data Science Project'
+		types: getProjectTypes('data-science-project')
 	},
 	{
 		slug: 'data-scraping',
@@ -181,7 +182,7 @@ export const items: Array<Project> = [
 			from: new Date()
 		},
 		skills: getSkills('python', 'beautiful-soup', 'selenium', 'whisper', 'scrapy', 'spacy', 'jupyter'),
-		type: 'Data Science Project'
+		types: getProjectTypes('data-science-project')
 	},
 	{
 		slug: 'data-science',
@@ -197,7 +198,7 @@ export const items: Array<Project> = [
 			from: new Date()
 		},
 		skills: getSkills('python', 'pandas', 'scikit-learn', 'numpy', 'matplotlib', 'seaborn', 'jupyter'),
-		type: 'Data Science Project'
+		types: getProjectTypes('data-science-project')
 	},
 	{
 		slug: 'cpu-scheduling',
@@ -213,7 +214,7 @@ export const items: Array<Project> = [
 			from: new Date()
 		},
 		skills: getSkills('python' ),
-		type: 'Console Application'
+		types: getProjectTypes('console-application')
 	},
 	{
 		slug: 'rsa-encryption',
@@ -229,7 +230,7 @@ export const items: Array<Project> = [
 			from: new Date()
 		},
 		skills: getSkills('python'),
-		type: 'Console Application'
+		types: getProjectTypes('console-application')
 	},	
 	{
 		slug: 'chess',
@@ -249,7 +250,7 @@ export const items: Array<Project> = [
 			from: new Date(2021, 6, 18)
 		},
 		skills: getSkills('java', 'stockfish'),
-		type: 'Desktop Application', 
+		types: getProjectTypes('desktop-application'), 
 		aspect_ratio: AspectRatio.Square,
 		screenshots: [
 			{
@@ -314,7 +315,7 @@ export const items: Array<Project> = [
 			from: new Date(2023, 4, 21)
 		},
 		skills: getSkills('js', 'css', 'reactjs', 'bootstrap'),
-		type: 'Web Application',
+		types: getProjectTypes('web-application'),
 		screenshots: [
 			{
 				label: 'example where y values are inputted',
@@ -344,7 +345,7 @@ export const items: Array<Project> = [
 			from: new Date(2023, 2, 6)
 		},
 		skills: getSkills('js', 'php', 'sql', 'sass', 'reactjs', 'bootstrap', 'socketio', 'laravel', 'mysql', 'xampp', 'phpmyadmin', 'redis'),
-		type: 'Web Application', 
+		types: getProjectTypes('web-application'), 
 		screenshots: [
 			{
 				label: 'landing page hero',
@@ -402,7 +403,7 @@ export const items: Array<Project> = [
 			from: new Date(2021, 7, 25)
 		},
 		skills: getSkills('js', 'php', 'sql', 'css', 'bootstrap', 'laravel', 'mysql', 'xampp', 'phpmyadmin'),
-		type: 'Web Application', 
+		types: getProjectTypes('web-application'), 
 		screenshots: [
 			{
 				label: 'landing page hero',
@@ -482,7 +483,7 @@ export const items: Array<Project> = [
 			from: new Date(2021, 4, 7)
 		},
 		skills: getSkills('js', 'php', 'sql', 'css', 'sass', 'bootstrap', 'vuejs', 'laravel', 'mysql', 'xampp', 'phpmyadmin'),
-		type: 'Web Application', 
+		types: getProjectTypes('web-application'), 
 		screenshots: [
 			{
 				label: 'landing page hero',
@@ -542,7 +543,7 @@ export const items: Array<Project> = [
 			from: new Date(2021, 8, 3)
 		},
 		skills: getSkills('js', 'php', 'sql', 'css', 'bootstrap', 'laravel', 'mysql', 'xampp', 'phpmyadmin'),
-		type: 'Web Application', 
+		types: getProjectTypes('web-application'), 
 		screenshots: [
 			{
 				label: 'landing page hero',
@@ -572,7 +573,7 @@ export const items: Array<Project> = [
 			from: new Date(2021, 5, 24)
 		},
 		skills: getSkills('dart', 'flutter'),
-		type: 'Mobile Application', 
+		types: getProjectTypes('mobile-application'), 
 		aspect_ratio: 'aspect-[9/16]',
 		width: 'w-55%',
 		screenshots: [
@@ -656,7 +657,7 @@ export const items: Array<Project> = [
 			from: new Date(2021, 2, 30)
 		},
 		skills: getSkills('dart', 'flutter', 'firebase'),
-		type: 'Mobile Application', 
+		types: getProjectTypes('mobile-application'), 
 		awards: ['Diliman Solutions Challenge Top 8'], 
 		aspect_ratio: 'aspect-[9/20]',
 		width: 'w-55%',
@@ -700,7 +701,7 @@ export const items: Array<Project> = [
 			from: new Date(2019, 2, 1) //not sure of date
 		},
 		skills: getSkills('cpp', 'delphi', 'arduino'),
-		type: 'Robotics Project',
+		types: getProjectTypes('robotics-project'),
 		awards: ['STEM Fair Best Capstone Project'], 
 		screenshots: [
 			{
@@ -747,7 +748,7 @@ export const items: Array<Project> = [
 	// 		from: new Date()
 	// 	},
 	// 	skills: getSkills('html', 'css', 'sass', 'js', 'photoshop'),
-	// 	type: 'Web Application'
+	// 	types: getProjectTypes('web-application')
 	// },
 ];
 

@@ -1,16 +1,22 @@
 <script lang="ts">
 	import { items, title } from '@data/projects';
 	import * as skills from '@data/skills';
+	import * as project_types from '@data/project-types'
 	import { onMount } from 'svelte';
 
-	import type { Project, Skill } from '$lib/types';
+	import type { Project, Skill, ProjectType } from '$lib/types';
 
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import ProjectCard from '$lib/components/ProjectCard/ProjectCard.svelte';
 	import SearchPage from '$lib/components/SearchPage.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
+	import Banner from '$lib/components/Banner/Banner.svelte';
 
 	interface SkillFilter extends Skill {
+		isSelected?: boolean;
+	}
+
+	interface ProjectTypeFilter extends ProjectType {
 		isSelected?: boolean;
 	}
 
@@ -18,30 +24,55 @@
 		return items.some((project) => project.skills.some((skill) => skill.slug === it.slug));
 	});
 
+	let proj_type_filters: Array<ProjectTypeFilter> = project_types.items.filter((it) => {
+		return items.some((project) => project.types.some((type) => type.slug === it.slug));
+	});
+
 	let search = '';
 	let displayed: Array<Project> = [];
 
-	const isSelected = (slug: string): boolean => {
-		return filters.some((item) => item.slug === slug && item.isSelected);
+	const isSelected = (slug: string, filter_type: string): boolean => {
+		if (filter_type == 'tech') {
+			return filters.some((item) => item.slug === slug && item.isSelected);
+		} else if (filter_type == 'type') {
+			return proj_type_filters.some((item) => item.slug === slug && item.isSelected);
+		} else {
+			return false
+		}
 	};
 
-	const onSelected = (slug: string) => {
-		filters = filters.map((tech) => {
-			if (tech.slug === slug) {
-				tech.isSelected = !isSelected(slug);
-			}
+	const onSelected = (slug: string, filter_type: string) => {
+		if (filter_type == 'tech'){
+			filters = filters.map((tech) => {
+				if (tech.slug === slug) {
+					tech.isSelected = !isSelected(slug, filter_type);
+				}
 
-			return tech;
-		});
+				return tech;
+			});
+		} else if (filter_type == 'type') {
+			proj_type_filters = proj_type_filters.map((tech) => {
+				if (tech.slug === slug) {
+					tech.isSelected = !isSelected(slug, filter_type);
+				}
+
+				return tech;
+			});
+		}
 	};
 
 	$: {
 		displayed = items.filter((project) => {
 			const isFiltered =
-				filters.every((item) => !item.isSelected) ||
+				filters.every((item) => !item.isSelected) &&  
+				proj_type_filters.every((item) => !item.isSelected) || 
 				project.skills.some((tech) =>
-					filters.some((filter) => filter.isSelected && filter.slug === tech.slug)
+					filters.some((filter) => filter.isSelected && filter.slug === tech.slug) 
+				)  ||
+				project.types.some((tech) =>
+					proj_type_filters.some((filter) => filter.isSelected && filter.slug === tech.slug)
 				);
+	
 
 			const isSearched =
 				search.trim().length === 0 ||
@@ -72,8 +103,13 @@
 
 <SearchPage {title} on:search={onSearch}>
 	<div class="projects-filters">
+		{#each proj_type_filters as tech}
+			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug, 'type')}
+				>{tech.name}</Chip
+			>
+		{/each}
 		{#each filters as tech}
-			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug)}
+			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug, 'tech')}
 				>{tech.name}</Chip
 			>
 		{/each}

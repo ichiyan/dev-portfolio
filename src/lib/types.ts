@@ -59,6 +59,11 @@ export interface Skill<S extends string = string> extends Omit<Item<S>, 'shortDe
 	category?: SkillCategory;
 }
 
+export interface ProjectType<S extends string = string> {
+	slug: S, 
+	name: string;
+}
+
 export interface Project<S extends string = string> extends Item<S> {
 	links: Array<Link>;
 	color: Color;
@@ -66,7 +71,8 @@ export interface Project<S extends string = string> extends Item<S> {
 		from: Date;
 		to?: Date;
 	};
-	type: string;
+	types: Array<ProjectType<S>>;
+	// type: string;
 	skills: Array<Skill<S>>;
 	awards?: Array<string>;
 	aspect_ratio?: string | AspectRatio;  

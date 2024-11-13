@@ -50,7 +50,11 @@
 	<div class="col m-b-15px justify-between text-[var(--secondary-text)] text-0.85em">
 		<div class="row items-center gap-2">
 			<UIcon icon="i-carbon-assembly-cluster" classes="text-1.25em" />
-			<p>{project.type}</p>
+			<!-- <p>{project.type}</p> -->
+			 <!-- TO DO: format for multiple project types -->
+			 {#each project.types as type}
+				<p>{type.name}</p>
+			 {/each}
 		</div>
 		<CardDivider />
 		<div class="row items-center gap-2">
