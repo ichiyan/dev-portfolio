@@ -59,6 +59,13 @@
 			 <p>{from_to_year}</p>
 		</div>
 		<CardDivider />
+		<div class="row justify-between font-400">
+			{#if project.awards}
+				{#each project.awards as award}
+					<Chip classes={`font-500 text-1em`}>{award}</Chip>
+				{/each}
+			{/if}
+		</div>
 	</div>
 	<div class="col sm:h-100px md:h-150px">
 		<p class="text-[0.9em] text-[var(--secondary-text)] m-t-20px m-b-20px flex-1 line-clamp-5">
@@ -71,13 +78,6 @@
 			<Chip>{to}</Chip>
 		{/if}
 	</div> -->
-	<div class="row justify-between font-400">
-		{#if project.awards}
-			{#each project.awards as award}
-				<Chip classes={`font-500`}>{award}</Chip>
-			{/each}
-		{/if}
-	</div>
 	<CardDivider />
 	<div class="row flex-wrap">
 		{#key currentTheme}

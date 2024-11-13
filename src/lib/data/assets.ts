@@ -25,6 +25,8 @@ const Assets = {
 	Doggo: a('doggo.png'),
 	Openwhyd: a('openwhyd.png'),
 	IsekaiExpress: a('isekai-express.png'),
+	FinLit: a('finlit.png'),
+	SAR: a('sar.jpg'),
 	//tools
 	AWS: a('aws.svg'),
 	Bootstrap: a('bootstrap.svg'),

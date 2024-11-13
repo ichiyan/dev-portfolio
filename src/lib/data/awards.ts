@@ -37,7 +37,7 @@ export const items: Array<Award> = [
         location: 'Remote',
         period: { from: new Date(2021, 2, 30) },
         description:`The Diliman Solutions Challenge is a nationwide flagship event of Developer Students Clubs UP Diliman.
-        The challenge was to address local issues that are in line with the United Nation's Sustainable Development Goals (SDGs) by providing 
+        The challenge was to address local issues that are in line with the United Nations' Sustainable Development Goals (SDGs) by providing 
         an innovation proposal, working prototype, and a pitch presentation. Out of 250 participants and the initial top 30 teams, 
         we ranked 8th for our financial literacy application.`,
         links: [

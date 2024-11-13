@@ -52,7 +52,7 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('python', 'pytorch',  'diffusers', 'pandas', 'scikit-learn', 'numpy', 'matplotlib', 'jupyter', 'wandb'),
 		type: 'Deep Learning Project', 
-		awards: ['Best Presenter Award'], 
+		awards: [`CMLDS '24 Best Presenter Award`], 
 		screenshots: [
 			{
 				label: 'Neuro-Vis overall schematic',
@@ -564,7 +564,7 @@ export const items: Array<Project> = [
 		description: `This is a mobile application for Openwhyd, a platform to collect & share musical gems from YouTube, SoundCloud, and more.
 		Specifically, it uses the Openwhyd API to allow users to create playlists of music tracks from various streaming platforms and to discover the music posted by other users. 
 		Through the mobile application, users can also listen to videos and audios more easily.`,
-		shortDescription: `A mobile application for Openwhyd, a platform to collect & share musical gems from YouTube, SoundCloud, and more`,
+		shortDescription: `A mobile application for Openwhyd, a platform to collect, curate, and share musical gems from YouTube, SoundCloud, and more`,
 		links: [{ to: 'https://github.com/ichiyan/Flutter-Openwhyd-API-Music-App', label: 'GitHub' }],
 		logo: Assets.Openwhyd,
 		name: 'Openwhyd: Music Streaming and Curation',
@@ -629,34 +629,109 @@ export const items: Array<Project> = [
 	{
 		slug: 'finlit',
 		color: 'palegreen',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: '', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'FinLit: Mobile Game MVP',
+		description: `This application is a minimum viable product (MVP) or prototype of a mobile simulation game designed to 
+					instill financial literacy among the younger generation in an <b>immersive visual-novel-like simulation</b> where they primarily 
+					play the role of a financial adviser catering to clients with varied financial issues. By experiencing and 
+					applying concepts learned in a realistic, controlled environment and by being able to connect with relatable 
+					characters, users can acquire knowledge faster and retain it longer.
+					<br><br>
+					Other features include a <b>stock market simulation</b> for more advanced users to learn how to trade stocks in real-time 
+					using virtual currency, how to assess risks, and how to manage their own stock portfolio. In the <b>info corner</b>, 
+					users can learn economic-related news and to further encourage a community of financially responsible individuals, 
+					a <b>monitored forum</b> is accessible within the app. Through the forum,  users can share their experiences, give tips, consult with 
+					professionals, and be part of a community that aims to promote financial education. This section will offer various incentives 
+					for the financial professionals so that they will be encouraged to contribute and help those who are in the process of 
+					learning financial literacy.
+					<br><br>
+					With this project, we ranked 8th out of 250 participants and initial top 30 teams during the 2021 Diliman Solutions Challenge.`,
+		shortDescription: `An app that instills financial literacy through a simulation visual-novel like game, stock market simulation, 
+		info corner, and forum`, 
+		links: [
+			{ to: '', label: 'GitHub' }, 
+			{ to: 'https://youtu.be/WWDfOiD8Szc', label: 'Introductory Video' }
+		],
+		logo: Assets.FinLit,
+		name: 'FinLit: Financial Literacy Game MVP',
 		period: {
 			from: new Date(2021, 2, 30)
 		},
 		skills: getSkills('dart', 'flutter', 'firebase'),
-		type: 'Mobile Application'
+		type: 'Mobile Application', 
+		awards: ['Diliman Solutions Challenge Top 8'], 
+		aspect_ratio: 'aspect-[9/20]',
+		width: 'w-55%',
+		screenshots: [
+			{
+				label: 'home',
+				src: getFileSrc('finlit-home.png')
+			},
+			{
+				label: 'financial literacy assessment',
+				src: getFileSrc('finlit-assessment.png')
+			},
+			{
+				label: 'stock market simulation',
+				src: getFileSrc('finlit-stock-market.png')
+			},
+			{
+				label: 'info corner',
+				src: getFileSrc('finlit-info-corner.png')
+			},
+			{
+				label: 'forum',
+				src: getFileSrc('finlit-forum.png')
+			},
+		]
 	},
 	{
 		slug: 'search-and-rescue-robot',
 		color: 'silver',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: '', label: 'GitHub' }],
-		logo: Assets.Unknown,
+		description: `A rover type search and rescue robot prototype intended to be used in search and rescue operations in mines.
+						It is equipped with a first person view camera, DHT11 temperature and humidity sensor,  MQ135 air quality sensor 
+						for detecting carbon dioxide levels, and MQ4 sensor for detecting methane levels.`,
+		shortDescription: `A rover type mine search and rescue robot prototype equipped with camera and gas sensors`,
+		links: [
+			{ to: '', label: 'GitHub' },
+			{ to: 'https://youtu.be/4TE59BsnxTA', label: 'The Making'}
+		],
+		logo: Assets.SAR,
 		name: 'Soteria: Search and Rescue Robot Prototype',
 		period: {
-			from: new Date()
+			from: new Date(2019, 2, 1) //not sure of date
 		},
 		skills: getSkills('cpp', 'delphi', 'arduino'),
-		type: 'Robotics Project'
+		type: 'Robotics Project',
+		awards: ['STEM Fair Best Capstone Project'], 
+		screenshots: [
+			{
+				label: 'top view (without cover)',
+				src: getFileSrc('sar-top-view.jpg')
+			},
+			{
+				label: 'front view (without cover)',
+				src: getFileSrc('sar-front-view.jpg')
+			},
+			{
+				label: 'back view (without cover)',
+				src: getFileSrc('sar-back-view.jpg')
+			},
+			{
+				label: 'side view (without cover)',
+				src: getFileSrc('sar-side-view.jpg')
+			},
+			{
+				label: 'mobile application',
+				src: getFileSrc('sar-app.png')
+			},
+			{
+				label: 'mobile application with camera',
+				src: getFileSrc('sar-app-cam.png')
+			},
+			{
+				label: 'mobile application with camera',
+				src: getFileSrc('sar-app-cam2.png')
+			},
+		]
 	},
 	// {
 	// 	slug: 'front-end',
