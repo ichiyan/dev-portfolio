@@ -77,7 +77,7 @@ export function filterItemsByQuery<T extends ItemOrSkill>(
 	items: Array<T>,
 	query: string
 ): Array<T> {
-	const ignoredProperties = ['logo', 'links', 'color', 'screenshots'];
+	const ignoredProperties = ['logo', 'links', 'color', 'screenshots', 'aspect_ratio','width'];
 	query = query.toLowerCase();
 
 	return items.filter((item) => doesQueryExistInItemOrAttributes(item, query, ignoredProperties));

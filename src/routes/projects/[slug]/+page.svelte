@@ -44,7 +44,10 @@
 					<div class="text-0.9em">
 						<MainTitle>{data.project.name}</MainTitle>
 					</div>
-					<p class="font-300 text-center text-[var(--tertiary-text)] m-y-2">{data.project.type}</p>
+					<!-- TO DO: format for multiple types -->
+					{#each data.project.types as type}
+						<p class="font-300 text-center text-[var(--tertiary-text)] m-y-2">{type.name}</p>
+					{/each}
 					<div class="w-75%">
 						<CardDivider />
 					</div>

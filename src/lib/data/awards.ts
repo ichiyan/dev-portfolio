@@ -8,7 +8,7 @@ export const items: Array<Award> = [
     {
         slug: 'cmlds-best-presenter',
         color: 'blue',
-        event: 'International Conference on Computing, Machine Learning, and Data Science', 
+        name: 'International Conference on Computing, Machine Learning, and Data Science', 
         award: 'Best Presenter', 
         location: 'Bugis, Singapore',
         period: { from: new Date(2024, 3, 13) },
@@ -21,7 +21,7 @@ export const items: Array<Award> = [
     {
         slug: 'usc-honors',
         color: 'lawngreen',
-        event: 'University of San Carlos', 
+        name: 'University of San Carlos', 
         award: 'magna cum laude, cum laude caroli sancti', 
         location: 'Cebu, Philippines',
         period: { from: new Date(2023, 4, 22) },
@@ -32,7 +32,7 @@ export const items: Array<Award> = [
     {
         slug: 'diliman-solutions-challenge',
         color: 'red',
-        event: 'Diliman Solutions Challenge', 
+        name: 'Diliman Solutions Challenge', 
         award: 'Top 8', 
         location: 'Remote',
         period: { from: new Date(2021, 2, 30) },
@@ -47,7 +47,7 @@ export const items: Array<Award> = [
     {
         slug: 'ococosda-participant',
         color: 'orchid',
-        event: '22nd Oriental COCOSDA', 
+        name: '22nd Oriental COCOSDA', 
         award: 'Paricipant', 
         location: 'Univerity of San Carlos, Cebu',
         period: { from: new Date(2019, 9, 25), to: new Date(2019, 9, 27) },
@@ -60,7 +60,7 @@ export const items: Array<Award> = [
     {
         slug: 'stem-fair-best-capstone',
         color: 'silver',
-        event: 'DLS ASMC STEM  Fair', 
+        name: 'DLS ASMC STEM  Fair', 
         award: 'Best Capstone Project', 
         location: 'Cebu, Philippines',
         period: { from: new Date(2019, 2, 1) }, //not sure exact date
@@ -72,7 +72,7 @@ export const items: Array<Award> = [
     {
         slug: 'divrcon-best-research',
         color: 'mediumturquoise',
-        event: 'Toledo Divison Research Conference', 
+        name: 'Toledo Divison Research Conference', 
         award: 'Best Research Project, Best Poster Presentation', 
         location: 'Cebu, Philippines',
         period: { from: new Date(2019, 2, 1) }, //not sure exact date
@@ -82,7 +82,7 @@ export const items: Array<Award> = [
     {
         slug: 'dlsp-fair-presenter',
         color: 'springgreen',
-        event: 'De La Salle Philippines Academic and Cultural Fair', 
+        name: 'De La Salle Philippines Academic and Cultural Fair', 
         award: 'Research Presenter', 
         location: 'Ozamiz, Philippines',
         period: { from: new Date(2019, 1, 1) }, //not sure exact date
@@ -92,7 +92,7 @@ export const items: Array<Award> = [
     {
         slug: 'dlsasmc-gs-valedictorian',
         color: 'forestgreen',
-        event: 'De La Salle ASMC', 
+        name: 'De La Salle ASMC', 
         award: 'STEM Valedictorian with High Honors', 
         location: 'Cebu, Philippines',
         period: { from: new Date(2019, 3, 1) }, //not sure exact date
@@ -102,7 +102,7 @@ export const items: Array<Award> = [
     {
         slug: 'dlsasmc-shs-valedictorian',
         color: 'chartreuse',
-        event: 'De La Salle ASMC', 
+        name: 'De La Salle ASMC', 
         award: 'Valedictorian with High Honors', 
         location: 'Cebu, Philippines',
         period: { from: new Date(2013, 3, 1) }, //not sure exact date

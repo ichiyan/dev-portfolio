@@ -6,6 +6,7 @@
 	import * as experiences from '@data/experience';
 	import * as projects from '@data/projects';
 	import * as skills from '@data/skills';
+	import * as awards from '@data/awards';
 
 	import type { Icon, Item, Skill } from '$lib/types';
 
@@ -43,7 +44,7 @@
 				to: `projects/${data.slug}`
 			}))
 		);
-
+		
 		result.push(
 			...filterItemsByQuery(
 				skills.items as unknown as Array<ItemOrSkill>,
@@ -62,6 +63,15 @@
 				icon: 'i-carbon-development',
 				name: `${data.name} @ ${data.company}`,
 				to: `experience/${data.slug}`
+			}))
+		);
+
+		result.push(
+			...filterItemsByQuery(awards.items, query).map<SearchResultItem>((data) => ({
+				data,
+				icon: 'i-carbon-badge',
+				name: `${data.name} - ${data.award}`,
+				to: `awards`
 			}))
 		);
 	}

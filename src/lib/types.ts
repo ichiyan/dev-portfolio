@@ -33,7 +33,7 @@ export type Asset = string | { light: string; dark: string };
 export interface Item<S extends string = string> {
 	slug: S;
 	name: string;
-	logo: Asset;
+	logo?: Asset;
 	shortDescription: string;
 	description: string;
 	screenshots?: Array<{ src: string; label: string }>;
@@ -98,16 +98,14 @@ export interface Education<S extends string = string> extends Item<S> {
 	honors: Array<string>
 }
 
-export interface Award<S extends string = string>  {
-	slug: string;
-	event: string;
+export interface Award<S extends string = string> extends Omit<Item<S>, 'logo' | 'shortDescription' | 'screenshots'>  {
 	award: string;
 	location: string;
 	period: {
 		from: Date;
 		to?: Date;
 	};
-	description: string;
 	links?: Array<Link>;
 	color: Color;
 }
+

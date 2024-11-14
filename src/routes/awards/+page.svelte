@@ -21,7 +21,7 @@
 
 		result = items.filter((it) => {
 			return (
-				it.event.toLowerCase().includes(s) ||
+				it.name.toLowerCase().includes(s) ||
 				it.award.toLowerCase().includes(s) ||
 				it.description.toLowerCase().includes(s) ||
 				it.location.toLowerCase().includes(s) 
@@ -55,7 +55,7 @@
 						<div class="col flex-1 items-stretch">
 							<Card color={award.color}>
 								<div class="flex-1 col gap-2 items-stretch">
-									<div class="text-[1.3em] font-light">{award.event}</div>
+									<div class="text-[1.3em] font-light">{award.name}</div>
 									<div  class="text-[1.3em] font-medium mb-5px">{award.award}</div>
 									{#if award.links}
 										<div class="row flex-wrap gap-1 mt-15px">
