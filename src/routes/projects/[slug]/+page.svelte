@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { getAssetURL } from '$lib/data/assets';
+	import Assets, { getAssetURL } from '$lib/data/assets';
 	import { title } from '@data/projects';
 
 	import type { Project } from '$lib/types';
@@ -39,7 +39,7 @@
 		</div>
 	{:else}
 		<div class="flex flex-col items-center overflow-x-hidden">
-			<Banner img={getAssetURL(data.project.logo)}>
+			<Banner img={getAssetURL(data.project.logo? data.project.logo : Assets.Unknown)}>
 				<div class="col-center p-y-20">
 					<div class="text-0.9em">
 						<MainTitle>{data.project.name}</MainTitle>
@@ -68,7 +68,7 @@
 								href={`${base}/skills/${item.slug}`}
 							>
 								<CardLogo
-									src={getAssetURL(item.logo)}
+									src={getAssetURL(item.logo? item.logo : Assets.Unknown)}
 									alt={item.name}
 									radius={'0px'}
 									height={15}

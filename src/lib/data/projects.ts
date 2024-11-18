@@ -153,33 +153,63 @@ export const items: Array<Project> = [
 		]
 	},
 	{
-		slug: 'shape-recognition',
+		slug: 'shape-detection',
 		color: 'royalblue',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/ichiyan/English-Character-Recognition', label: 'GitHub' }],
+		description: `The Java implementation of this project utilizes OpenCV to capture images using the device's camera and to provide real-time
+						shape detection. The Python implementation also uses OpenCV for capturing photos but the non-real-time shape detection
+						is coded from scratch—without using existing libraries like OpenCV for processing images and detecting shapes. 
+						<br><br>
+						The Python implementation attempts to code from scratch the algorithms used for shape detection: Gaussian blur, Canny edge detection, 
+						Suzuki contour, finding the perimeter, and Ramer-Douglas-Peucker (RDP) algorithm for simplifying the contours and reducing the number
+						of points.`,
+		shortDescription: `Captures photos using the device's camera and also provides real-time shape detection (for Java implementation)`,
+		links: [
+			{ to: 'https://github.com/ichiyan/Camera-Capture-and-Shape-Detection-Java', label: 'Java Implementation GitHub' }, 
+			{ to: 'https://github.com/ichiyan/Camera-and-Shape-Recognition', label: 'Python Implementation GitHub' }
+		],
 		logo: Assets.Unknown,
-		name: 'Shape Recognition',
+		name: 'Camera Capture and Shape Detection',
 		period: {
-			from: new Date()
+			from: new Date(2022, 10, 1) //not sure exact datr
 		},
 		skills: getSkills('python', 'java', 'opencv'),
-		types: getProjectTypes('data-science-project')
+		types: getProjectTypes('data-science-project'), 
+		aspect_ratio: AspectRatio.Square,
+		screenshots: [
+			{
+				label: 'camera',
+				src: getFileSrc('camera.gif')
+			},
+			{
+				label: 'save image',
+				src: getFileSrc('camera-save.png')
+			},
+			{
+				label: 'detect shapes (Java)',
+				src: getFileSrc('camera-shape-detection1.png')
+			},
+			{
+				label: 'detect shapes (Java)',
+				src: getFileSrc('camera-shape-detection2.png')
+			},
+			{
+				label: 'detect shapes (Python)',
+				src: getFileSrc('shape-detection.png')
+			},
+		]
 	},
 	{
 		slug: 'data-scraping',
 		color: 'thistle',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: '', label: 'GitHub' }],
+		description: `This repository contains the code and other resources for different data scraping projects. As of 2024, the projects include
+						scraping data from websites and videos with the latter implementing automatic speech recognition and diarization
+						using WhisperX.`,
+		shortDescription: `Collection of data scraping projects`,
+		links: [{ to: 'https://github.com/ichiyan/data-scraping', label: 'GitHub' }],
 		logo: Assets.DataScraping,
 		name: 'Data Scraping',
 		period: {
-			from: new Date()
+			from: new Date(2024, 7, 1)
 		},
 		skills: getSkills('python', 'beautiful-soup', 'selenium', 'whisper', 'scrapy', 'spacy', 'jupyter'),
 		types: getProjectTypes('data-science-project')
@@ -187,13 +217,13 @@ export const items: Array<Project> = [
 	{
 		slug: 'data-science',
 		color: 'gold',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: '', label: 'GitHub' }],
+		description: `This repository contains data science-related mini projects and activities. As of 2024, 
+		the uploaded projects cover exploratory data analysis, data visualization, data cleaning and preparation for modeling, 
+		and application of machine learning techniques for predictive modeling.`,
+		shortDescription: `Collection of data science mini projects or activities`,
+		links: [{ to: 'https://github.com/ichiyan/data-science-projects', label: 'GitHub' }],
 		logo: Assets.Unknown,
-		name: 'Collection of DataCamp Data Science Projects',
+		name: 'Collection of Data Science Projects',
 		period: {
 			from: new Date()
 		},
@@ -203,34 +233,91 @@ export const items: Array<Project> = [
 	{
 		slug: 'cpu-scheduling',
 		color: 'springgreen',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		description: `This program simulates CPU scheduling algorithms and shows tabular and Gantt chart visualizations of the processes 
+						from scratch—without using existing CPU scheduling simulators and existing visualization libraries.
+						<br><br>
+						There are six CPU scheduling algorithms implemented in this simulator: (1) First Come, First Served, (2) Non-Preemptive Shortest Job First, 
+						(3) Preemptive Shortest Job First, (4) Round Robin, (5) Non-Preemptive Priority, and (6) Preemptive Priority.`,
+		shortDescription: `Simulation of operating system CPU scheduling algorithms and visualizations built from scratch`,
 		links: [{ to: 'https://github.com/ichiyan/CPU-Scheduling-Algorithms-Simulation', label: 'GitHub' }],
 		logo: Assets.CPU,
 		name: 'CPU Scheduling Algorithms Simulation',
 		period: {
-			from: new Date()
+			from: new Date(2022, 0, 11)
 		},
 		skills: getSkills('python' ),
-		types: getProjectTypes('console-application')
+		types: getProjectTypes('console-application'), 
+		screenshots: [
+			{
+				label: 'First Come, First Served',
+				src: getFileSrc('cpu-fcfs.png')
+			},
+			{
+				label: 'Non-Preemptive Shortest Job First',
+				src: getFileSrc('cpu-np-sjf.png')
+			},
+			{
+				label: 'Preemptive Shortest Job First',
+				src: getFileSrc('cpu-p-sjf.png')
+			},
+			{
+				label: 'Round Robin',
+				src: getFileSrc('cpu-rr.png')
+			},
+			{
+				label: 'Non-Preemptive Priority',
+				src: getFileSrc('cpu-np-p.png')
+			},
+			{
+				label: 'Preemptive Priority',
+				src: getFileSrc('cpu-p-p.png')
+			},
+		]
 	},
 	{
 		slug: 'rsa-encryption',
 		color: 'red',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		description: `This project implements and simulates the Rivest-Shamir-Adleman (RSA) encryption algorithm. RSA is an asymmetric public-private key cryptosystem 
+		 				wherein the encryption key is public and distinct from the decryption key, which is kept secret (private). An RSA user creates and publishes a 
+						public key based on two large prime numbers, along with an auxiliary value. The prime numbers are kept secret. Messages can be encrypted by anyone, 
+						via the public key, but can only be decrypted by someone who knows the private key. The security of RSA relies on the practical difficulty of factoring 
+						the product of two large prime numbers, the "factoring problem".
+						<br><br>
+						The RSA algorithm involves four steps: key generation, key distribution, encryption, and decryption.
+						The public and private key generation algorithm involves choosing two large prime numbers, p and q, which are generated using a primality test algorithm. 
+						A modulus, n, is calculated by multiplying p and q. This number is used by both the public and private keys and provides the link between them. The public 
+						key consists of the modulus n and a public exponent, e. The private key consists of the modulus n and the private exponent d, which can be calculated using 
+						the extended Euclidean algorithm to find the multiplicative inverse with respect to the totient of n. The modular exponentiation to e and d corresponds to 
+						encryption and decryption, respectively.
+						<br><br>
+						This program implements all four steps and also allows users the option to choose the values of the variables themselves to better understand the process.`, 
+		shortDescription: `Code implementing the Rivest-Shamir-Adleman (RSA) encryption algorithm used in cryptography`,
 		links: [{ to: 'https://github.com/ichiyan/Sample-RSA-Encryption', label: 'GitHub' }],
 		logo: Assets.RSA,
 		name: 'RSA Encryption',
 		period: {
-			from: new Date()
+			from: new Date(2021, 10, 10)
 		},
 		skills: getSkills('python'),
-		types: getProjectTypes('console-application')
+		types: getProjectTypes('console-application'), 
+		screenshots: [
+			{
+				label: 'using sample given values',
+				src: getFileSrc('rsa-given-values.png')
+			},
+			{
+				label: 'using generated values',
+				src: getFileSrc('rsa-generated-values.png')
+			},
+			{
+				label: 'using inputted primes and generated keys',
+				src: getFileSrc('rsa-input-primes.png')
+			},
+			{
+				label: 'using inputted values',
+				src: getFileSrc('rsa-input-all-values.png')
+			},
+		]
 	},	
 	{
 		slug: 'chess',
@@ -372,6 +459,14 @@ export const items: Array<Project> = [
 				src: getFileSrc('taskvenator-add-new-task.png')
 			},
 			{
+				label: 'shop',
+				src: getFileSrc('taskvenator-shop.gif')
+			},
+			{
+				label: 'inventory',
+				src: getFileSrc('taskvenator-inventory.gif')
+			},
+			{
 				label: 'create a party',
 				src: getFileSrc('taskvenator-create-party.png')
 			},
@@ -382,6 +477,10 @@ export const items: Array<Project> = [
 			{
 				label: 'party tab of party leader which shows join requests',
 				src: getFileSrc('taskvenator-party.png')
+			},
+			{
+				label: 'party chat (sped up)',
+				src: getFileSrc('taskvenator-chat.gif')
 			},
 		]
 	},

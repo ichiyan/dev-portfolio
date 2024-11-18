@@ -9,7 +9,7 @@
 	import ChipIcon from '../Chip/ChipIcon.svelte';
 	import CardLogo from '../Card/CardLogo.svelte';
 	import type { Project } from '$lib/types';
-	import { getAssetURL } from '$lib/data/assets';
+	import Assets, { getAssetURL } from '$lib/data/assets';
 	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
 
@@ -37,7 +37,7 @@
 </script>
 
 <Card color={project.color} href={`${base}/projects/${project.slug}`}>
-	<CardLogo alt={project.name} src={getAssetURL(project.logo)} height={150} width={300} radius={'0'} />
+	<CardLogo alt={project.name} src={getAssetURL(project.logo ? project.logo: Assets.Unknown)} height={150} width={300} radius={'0'} />
 	<div class="m-t-20px row justify-between items-center">
 		<CardTitle title={project.name} />
 		<div class="row">
