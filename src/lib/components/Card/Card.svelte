@@ -17,7 +17,7 @@
 	$: computedColor = isHexColor(color) ? color : convertNamedToHexColor(color as NamedColor);
 	$: borderColor = changeColorOpacity(computedColor, 0.5);
 	$: dropColor = changeColorOpacity(computedColor, 0.15);
-	$: bgColor = changeColorOpacity(computedColor, 0.01);
+	$: bgColor = changeColorOpacity(computedColor, 0.03);
 
 	$: {
 		if (el) {

@@ -126,7 +126,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'english-character-recognition',
-		color: 'orchid',
+		color: 'azure',
 		description: `This project involves two simple programs for handwritten English character recognition (A-E) for different datasets.
 					One program implements the k-nearest neighbors (KNN) algorithm for multi-class classification and the other program uses an 
 					artifical neural network (ANN) implemented from scratch. While different datasets and sample sizes were used for each program, 
@@ -153,7 +153,7 @@ export const items: Array<Project> = [
 		]
 	},
 	{
-		slug: 'shape-detection',
+		slug: 'camera-capture-shape-detection',
 		color: 'royalblue',
 		description: `The Java implementation of this project utilizes OpenCV to capture images using the device's camera and to provide real-time
 						shape detection. The Python implementation also uses OpenCV for capturing photos but the non-real-time shape detection
@@ -167,7 +167,7 @@ export const items: Array<Project> = [
 			{ to: 'https://github.com/ichiyan/Camera-Capture-and-Shape-Detection-Java', label: 'Java Implementation GitHub' }, 
 			{ to: 'https://github.com/ichiyan/Camera-and-Shape-Recognition', label: 'Python Implementation GitHub' }
 		],
-		logo: Assets.Unknown,
+		logo: Assets.CameraCaptureShapeDetection,
 		name: 'Camera Capture and Shape Detection',
 		period: {
 			from: new Date(2022, 10, 1) //not sure exact datr
@@ -216,13 +216,13 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'data-science',
-		color: 'gold',
+		color: 'orchid',
 		description: `This repository contains data science-related mini projects and activities. As of 2024, 
 		the uploaded projects cover exploratory data analysis, data visualization, data cleaning and preparation for modeling, 
 		and application of machine learning techniques for predictive modeling.`,
 		shortDescription: `Collection of data science mini projects or activities`,
 		links: [{ to: 'https://github.com/ichiyan/data-science-projects', label: 'GitHub' }],
-		logo: Assets.Unknown,
+		logo: Assets.DataScience,
 		name: 'Collection of Data Science Projects',
 		period: {
 			from: new Date()

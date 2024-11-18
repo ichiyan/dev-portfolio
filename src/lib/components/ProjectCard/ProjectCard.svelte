@@ -87,7 +87,7 @@
 		{#key currentTheme}
 			{#each project.skills as tech}
 				<ChipIcon
-					logo={getAssetURL(tech.logo)}
+					logo={getAssetURL(tech.logo ? tech.logo : Assets.Unknown)}
 					name={tech.name}
 					href={`${base}/skills/${tech.slug}`}
 				/>

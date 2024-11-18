@@ -37,7 +37,7 @@ const defineSkill = <S extends string>(
 export const items = [
 	defineSkill({
 		slug: 'python',
-		color: 'blue',
+		color: '#4a8bbf',
 		description: '',
 		logo: Assets.Python,
 		name: 'Python',
@@ -45,7 +45,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'java',
-		color: 'blue',
+		color: '#118ec5',
 		description: '',
 		logo: Assets.Java,
 		name: 'Java',
@@ -53,7 +53,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'c',
-		color: 'blue',
+		color: '#639bd3',
 		description: '',
 		logo: Assets.C,
 		name: 'C',
@@ -61,7 +61,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'js',
-		color: 'yellow',
+		color: '#f5e01d',
 		description: '',
 		logo: Assets.JavaScript,
 		name: 'Javascript',
@@ -69,7 +69,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'ts',
-		color: 'blue',
+		color: '#057ddc',
 		description: '',
 		logo: Assets.TypeScript,
 		name: 'Typescript',
@@ -77,7 +77,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'dart',
-		color: 'blue',
+		color: '#55ddca',
 		description: '',
 		logo: Assets.Dart,
 		name: 'Dart',
@@ -85,7 +85,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'sql',
-		color: 'blue',
+		color: '#20ccf4',
 		description: '',
 		logo: Assets.SQL,
 		name: 'SQL',
@@ -93,7 +93,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'php',
-		color: 'darkorchid',
+		color: '#737bb2',
 		description: '',
 		logo: Assets.PHP,
 		name: 'PHP',
@@ -101,7 +101,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'cpp',
-		color: 'blue',
+		color: '#0081cc',
 		description: '',
 		logo: Assets.Cpp,
 		name: 'C++',
@@ -109,7 +109,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'delphi',
-		color: 'red',
+		color: '#db252c',
 		description: '',
 		logo: Assets.Delphi,
 		name: 'Delphi',
@@ -117,7 +117,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'html',
-		color: 'orange',
+		color: '#f4642b',
 		description: '',
 		logo: Assets.HTML,
 		name: 'HTML',
@@ -125,7 +125,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'css',
-		color: 'blue',
+		color: '#2b63f3',
 		description: '',
 		logo: Assets.CSS,
 		name: 'CSS',
@@ -133,7 +133,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'sass',
-		color: 'pink',
+		color: '#d47ba7',
 		description: '',
 		logo: Assets.Sass,
 		name: 'Sass',
@@ -141,7 +141,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'reactjs',
-		color: 'cyan',
+		color: '#08dcfc',
 		description: '',
 		logo: Assets.ReactJs,
 		name: 'ReactJS',
@@ -149,7 +149,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'svelte',
-		color: 'orange',
+		color: '#fc4c24',
 		description: '',
 		logo: Assets.Svelte,
 		name: 'Svelte',
@@ -157,7 +157,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'socketio',
-		color: 'white',
+		color: 'azure',
 		description: '',
 		logo: Assets.SocketIO,
 		name: 'Socket.IO',
@@ -165,7 +165,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'pandas',
-		color: 'blue',
+		color: '#14045b',
 		description: '',
 		logo: Assets.Pandas,
 		name: 'Pandas',
@@ -173,7 +173,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'scikit-learn',
-		color: 'orange',
+		color: '#f89939',
 		description: '',
 		logo: Assets.SciKitLearn,
 		name: 'SciKit-Learn',
@@ -181,7 +181,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'numpy',
-		color: 'blue',
+		color: '#4cabcc',
 		description: '',
 		logo: Assets.Numpy,
 		name: 'Numpy',
@@ -189,7 +189,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'matplotlib',
-		color: 'orange',
+		color: '#fe7e2b',
 		description: '',
 		logo: Assets.Matplotlib,
 		name: 'Matplotlib',
@@ -197,7 +197,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'seaborn',
-		color: 'teal',
+		color: '#abdbd3',
 		description: '',
 		logo: Assets.Seaborn,
 		name: 'Seaborn',
@@ -205,7 +205,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'pytorch',
-		color: 'orange',
+		color: '#f44c2c',
 		description: '',
 		logo: Assets.Pytorch,
 		name: 'Pytorch',
@@ -213,7 +213,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'diffusers',
-		color: 'yellow',
+		color: '#fcd41c',
 		description: '',
 		logo: Assets.Huggingface,
 		name: 'Diffusers',
@@ -221,7 +221,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'opencv',
-		color: 'red',
+		color: '#04fc04',
 		description: '',
 		logo: Assets.OpenCV,
 		name: 'OpenCV',
@@ -229,7 +229,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'beautiful-soup',
-		color: 'thistle',
+		color: 'azure',
 		description: '',
 		logo: Assets.BeautifulSoup,
 		name: 'Beautiful Soup',
@@ -237,7 +237,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'selenium',
-		color: 'red',
+		color: '#cc0b2b',
 		description: '',
 		logo: Assets.Selenium,
 		name: 'Selenium',
@@ -245,7 +245,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'whisper',
-		color: 'green',
+		color: '#0cac84',
 		description: '',
 		logo: Assets.OpenAI,
 		name: 'OpenAI Whisper',
@@ -253,7 +253,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'spacy',
-		color: 'blue',
+		color: '#0ca4d4',
 		description: '',
 		logo: Assets.Spacy,
 		name: 'spaCy',
@@ -261,7 +261,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'laravel',
-		color: 'orange',
+		color: '#fc2c24',
 		description: '',
 		logo: Assets.Laravel,
 		name: 'Laravel',
@@ -269,7 +269,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'django',
-		color: 'green',
+		color: '#2cab74',
 		description: '',
 		logo: Assets.Django,
 		name: 'Django',
@@ -277,7 +277,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'vuejs',
-		color: 'green',
+		color: '#44bb84',
 		description: '',
 		logo: Assets.VueJs,
 		name: 'VueJS',
@@ -285,7 +285,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'spring',
-		color: 'green',
+		color: '#60bc34',
 		description: '',
 		logo: Assets.Spring,
 		name: 'Java Spring',
@@ -293,7 +293,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'flutter',
-		color: 'blue',
+		color: '#5bc9fc',
 		description: '',
 		logo: Assets.Flutter,
 		name: 'Flutter',
@@ -301,7 +301,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'bootstrap',
-		color: 'slateblue',
+		color: '#7a13f7',
 		description: '',
 		logo: Assets.Bootstrap,
 		name: 'Bootstrap',
@@ -309,7 +309,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'scrapy',
-		color: 'green',
+		color: '#63ab3c',
 		description: '',
 		logo: Assets.Scrapy,
 		name: 'Scrapy',
@@ -317,7 +317,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'mysql',
-		color: 'blue',
+		color: '#24c4fc',
 		description: '',
 		logo: Assets.MySQL,
 		name: 'MySQL',
@@ -333,7 +333,7 @@ export const items = [
 	// }),
 	defineSkill({
 		slug: 'dbeaver',
-		color: 'brown',
+		color: '#a48474',
 		description: '',
 		logo: Assets.Dbeaver,
 		name: 'Dbeaver',
@@ -341,7 +341,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'datagrip',
-		color: 'tomato',
+		color: '#24d38d',
 		description: '',
 		logo: Assets.DataGrip,
 		name: 'DataGrip',
@@ -349,7 +349,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'xampp',
-		color: 'orange',
+		color: '#fc7c24',
 		description: '',
 		logo: Assets.Xampp,
 		name: 'Xampp',
@@ -357,7 +357,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'phpmyadmin',
-		color: 'slateblue',
+		color: '#737bb2',
 		description: '',
 		logo: Assets.PhpMyAdmin,
 		name: 'phpMyAdmin',
@@ -365,7 +365,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'redis',
-		color: 'red',
+		color: '#dc3b2c',
 		description: '',
 		logo: Assets.Redis,
 		name: 'Redis',
@@ -373,7 +373,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'firebase',
-		color: 'orange',
+		color: '#fcc400',
 		description: '',
 		logo: Assets.Firebase,
 		name: 'Firebase',
@@ -381,7 +381,7 @@ export const items = [
 	}),
 	defineSkill({
 		slug: 'jupyter',
-		color: 'blue',
+		color: '#f3742c',
 		description: '',
 		logo: Assets.Jupyter,
 		name: 'Jupyter',
@@ -389,7 +389,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'google-maps',
-		color: 'green',
+		color: '#34ac54',
 		description: '',
 		logo: Assets.GoogleMaps,
 		name: 'Google Maps API',
@@ -397,7 +397,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'stockfish',
-		color: 'green',
+		color: '#97b991',
 		description: '',
 		logo: Assets.Stockfish,
 		name: 'Stockfish',
@@ -405,7 +405,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'wandb',
-		color: 'yellow',
+		color: '#fccc34',
 		description: '',
 		logo: Assets.Wandb,
 		name: 'Weights & Biases',
@@ -413,7 +413,7 @@ export const items = [
 	}), 
 	defineSkill({
 		slug: 'arduino',
-		color: 'seagreen',
+		color: '#57adb3',
 		description: '',
 		logo: Assets.Arduino,
 		name: 'Arduino',

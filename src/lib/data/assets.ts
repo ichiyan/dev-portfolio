@@ -27,6 +27,8 @@ const Assets = {
 	IsekaiExpress: a('isekai-express.png'),
 	FinLit: a('finlit.png'),
 	SAR: a('sar.jpg'),
+	DataScience: a('data-science.png'),
+	CameraCaptureShapeDetection: a('camera-and-shape-detection.png'),
 	//tools
 	AWS: a('aws.svg'),
 	Bootstrap: a('bootstrap.svg'),
