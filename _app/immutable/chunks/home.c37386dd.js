@@ -1,3 +1,0 @@
-import{P as a}from"./types.22f4c7d1.js";import{g as o}from"./skills.d5ee71e2.js";const t="Home",l="Gabriela",e="Balisacan",n=` a Computer Science graduate with a drive to solve real-world problems 
-							through data and technology, hone software development skills, and realize continuous 
-							technical, professional, and personal growth`,r=[{platform:a.GitHub,link:"https://github.com/ichiyan"},{platform:a.Linkedin,link:"https://www.linkedin.com/"},{platform:a.Email,link:"gabriela.mbalisacan01@gmail.com"}],c=o("cpp","delphi","whisper","spring","vuejs","stockfish","firebase","arduino","google-maps");export{r as a,n as d,e as l,l as n,c as s,t};
