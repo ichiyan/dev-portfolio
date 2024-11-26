@@ -6,7 +6,7 @@
 	import CardLogo from '../Card/CardLogo.svelte';
 	import CardTitle from '../Card/CardTitle.svelte';
 	import ChipIcon from '../Chip/ChipIcon.svelte';
-	import { getAssetURL } from '$lib/data/assets';
+	import Assets, { getAssetURL } from '$lib/data/assets';
 	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
 	import Chip from '../Chip/Chip.svelte';
@@ -46,7 +46,7 @@
 	color={experience.color}
 >
 	<div class="col md:flex-row items-start gap-5 md:gap-1">
-		<CardLogo src={getAssetURL(experience.logo)} alt={experience.company} height={55} width={55} />
+		<CardLogo src={getAssetURL(experience.logo? experience.logo : Assets.Unknown)} alt={experience.company} height={55} width={55} />
 		<div class="col ml-0 md:ml-[20px] gap-3 w-full">
 			<div class="col ">
 				<h3
@@ -82,7 +82,7 @@
 				{#key currentTheme}
 					{#each experience.skills as skill}
 						<ChipIcon
-							logo={getAssetURL(skill.logo)}
+							logo={getAssetURL(skill.logo ? skill.logo : Assets.Unknown)}
 							name={skill.name}
 							href={`${base}/skills/${skill.slug}`}
 						/>

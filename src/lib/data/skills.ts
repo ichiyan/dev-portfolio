@@ -184,7 +184,7 @@ export const items = [
 		color: '#4cabcc',
 		description: '',
 		logo: Assets.Numpy,
-		name: 'Numpy',
+		name: 'NumPy',
 		category: 'library'
 	}), 
 	defineSkill({
@@ -380,6 +380,14 @@ export const items = [
 		category: 'db'
 	}),
 	defineSkill({
+		slug: 'celery',
+		color: '#b7de65',
+		description: '',
+		logo: Assets.Celery,
+		name: 'Celery',
+		category: ''
+	}), 
+	defineSkill({
 		slug: 'jupyter',
 		color: '#f3742c',
 		description: '',
@@ -419,6 +427,32 @@ export const items = [
 		name: 'Arduino',
 		category: ''
 	}), 
+	defineSkill({
+		slug: 'docker',
+		color: '#1d63ed',
+		description: '',
+		logo: Assets.Docker,
+		name: 'Docker',
+		category: 'devops'
+	}), 
+	defineSkill({
+		slug: 'pytest',
+		color: '#009fe3',
+		description: '',
+		logo: Assets.PyTest,
+		name: 'PyTest',
+		category: 'test'
+	}), 
+	defineSkill({
+		slug: 'locust',
+		color: '#bcec4c',
+		description: '',
+		logo: Assets.Locust,
+		name: 'Locust',
+		category: 'test'
+	}), 
+	
+	
 	// defineSkill({
 	// 	slug: 'photoshop',
 	// 	color: 'blue',

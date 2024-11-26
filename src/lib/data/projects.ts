@@ -9,20 +9,93 @@ const getFileSrc = (file: string): string => `${base}/project-screenshots/${file
 
 export const items: Array<Project> = [
 	{
-		slug: 'django-e-commerce',
+		slug: 'happibuy',
 		color: 'plum',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: '', label: 'Site' }],
-		logo: Assets.Unknown,
-		name: 'E-Commerce Store',
+		description: `This ongoing project is a backend for a full-featured e-commerce application using Django REST Framework. This RESTful API 
+						supports secure authentication and authorization with JSON Web Tokens (JWT) and CRUD (create, read, update, delete) operations, 
+						search, sorting, and pagination for managing staff, customers, products, product tags, collections, carts, and orders.
+						<br><br>
+						This project also contains development and production-ready configuration for simple mail transfer protocol (SMTP), task or job queueing
+						with Celery and Redis, caching with Redis, and serving with Green Unicorn. The development environment has also been configured 
+						for running with Docker, automated testing using PyTest, performance testing using Locust, and profiling with Silk. 
+						<br><br>
+						The API documentation built using Swagger UI is available at <a href="https://happibuy-prod-f5b6d9b30d3e.herokuapp.com/api/schema/docs" target="_blank">this link</a>.
+						`, 
+		shortDescription: `A backend for a full-featured e-commerce store using Django REST Framework`,
+		links: [
+			{ to: 'https://happibuy-prod-f5b6d9b30d3e.herokuapp.com/', label: 'Deployed App' },
+			{ to: 'https://happibuy-prod-f5b6d9b30d3e.herokuapp.com/api/schema/docs', label: 'API Documentation' },  
+			{ to: 'https://github.com/ichiyan/happibuy', label: 'GitHub'}
+		],
+		logo: Assets.HappiBuy,
+		name: 'HappiBuy: E-Commerce API',
 		period: {
-			from: new Date()
+			from: new Date(2024, 10, 26)
 		},
-		skills: getSkills('python', 'sql', 'django', 'mysql', 'datagrip'),
-		types: getProjectTypes('web-application')
+		skills: getSkills('python', 'sql', 'django', 'mysql', 'celery', 'redis', 'datagrip', 'docker', 'pytest','locust'),
+		types: getProjectTypes('web-application'), 
+		screenshots: [
+			{
+				label: 'home page',
+				src: getFileSrc('happibuy-home.png')
+			},
+			{
+				label: 'API documentation',
+				src: getFileSrc('happibuy-api-docs.png')
+			},
+			{
+				label: 'admin interface',
+				src: getFileSrc('happibuy-admin-interface.png')
+			},
+			{
+				label: 'admin interface - add user',
+				src: getFileSrc('happibuy-admin-add-user.png')
+			},
+			{
+				label: 'admin interface - add group',
+				src: getFileSrc('happibuy-admin-add-group.png')
+			},
+			{
+				label: 'admin interface - add user permissions',
+				src: getFileSrc('happibuy-admin-add-user-permissions.png')
+			},
+			{
+				label: 'admin interface - add user permissions',
+				src: getFileSrc('happibuy-admin-add-user-permissions.png')
+			},
+			{
+				label: 'admin interface - product list',
+				src: getFileSrc('happibuy-admin-products.png')
+			},
+			{
+				label: 'admin interface - product details',
+				src: getFileSrc('happibuy-admin-product-details.png')
+			},
+			{
+				label: 'cart item list',
+				src: getFileSrc('happibuy-cart-item-list.png')
+			},
+			{
+				label: 'order list (unauthenticated user)',
+				src: getFileSrc('happibuy-order-list-unauthenticated.png')
+			},
+			{
+				label: 'create JWT tokens',
+				src: getFileSrc('happibuy-create-jwt-tokens.png')
+			},
+			{
+				label: 'order list (authenticated user)',
+				src: getFileSrc('happibuy-order-list-authenticated.png')
+			},
+			{
+				label: 'SMTP server (development)',
+				src: getFileSrc('happibuy-smtp-server.png')
+			},
+			{
+				label: 'partial Locust performance tests (development)',
+				src: getFileSrc('happibuy-locust-tests.png')
+			},
+		]
 	},
 	{
 		slug: 'neuro-vis',
@@ -787,7 +860,7 @@ export const items: Array<Project> = [
 		slug: 'search-and-rescue-robot',
 		color: 'silver',
 		description: `A rover type search and rescue robot prototype intended to be used in search and rescue operations in mines.
-						It is equipped with a first person view camera, DHT11 temperature and humidity sensor,  MQ135 air quality sensor 
+						It is equipped with a first-person view camera, DHT11 temperature and humidity sensor,  MQ135 air quality sensor 
 						for detecting carbon dioxide levels, and MQ4 sensor for detecting methane levels.`,
 		shortDescription: `A rover type mine search and rescue robot prototype equipped with camera and gas sensors`,
 		links: [

@@ -3,7 +3,7 @@
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import SearchPage from '$lib/components/SearchPage.svelte';
-	import { getAssetURL } from '$lib/data/assets';
+	import Assets, { getAssetURL } from '$lib/data/assets';
 
 	import { title, items } from '@data/education';
 	import type { Education } from '$lib/types';
@@ -58,7 +58,7 @@
 						<Card color={education.color}>
 							<div class="flex-1 col gap-2 items-stretch">
 								<img
-									src={getAssetURL(education.logo)}
+									src={getAssetURL(education.logo ? education.logo : Assets.Unknown)}
 									alt={education.organization}
 									height="90"
 									width="90"

@@ -33,7 +33,7 @@ export const items: Array<Award> = [
         slug: 'diliman-solutions-challenge',
         color: 'red',
         name: 'Diliman Solutions Challenge', 
-        award: 'Top 8', 
+        award: '8th Place', 
         location: 'Remote',
         period: { from: new Date(2021, 2, 30) },
         description:`The Diliman Solutions Challenge is a nationwide flagship event of Developer Students Clubs UP Diliman.
@@ -63,8 +63,11 @@ export const items: Array<Award> = [
         name: 'DLS ASMC STEM  Fair', 
         award: 'Best Capstone Project', 
         location: 'Cebu, Philippines',
-        period: { from: new Date(2019, 2, 1) }, //not sure exact date
-        description:`Our search and rescue robot prototype was awarded the best capstone project (see project details for more information).`,
+        period: { 
+            from: new Date(2019, 1, 18),  
+            to: new Date(2019, 1, 19),
+        }, 
+        description:`Among 20 teams, we bagged the top award for our rover-type mine search and rescue robot prototype equipped with a first-person view camera, temperature and gas sensors, and mobile application.`,
         links: [
             {to: `${base}/projects/search-and-rescue-robot`, label: 'Project Details'}, 
         ]
@@ -75,9 +78,11 @@ export const items: Array<Award> = [
         name: 'Toledo Divison Research Conference', 
         award: 'Best Research Project, Best Poster Presentation', 
         location: 'Cebu, Philippines',
-        period: { from: new Date(2019, 2, 1) }, //not sure exact date
-        description:`I presented our quantitave research project on the relationship among multiple intelligences, academic achievement, 
-        and 21st century skills of grade 10 students which bagged multiple awards during the division research conference.`,
+        period: { from: new Date(2019, 2, 22) }, 
+        description:`DivRCon is a yearly research conference with more than 20 participating schools. I presented our quantitative research project on 
+        the relationship among multiple intelligences, academic achievement, and 21st-century skills of grade 10 students. For this research, 
+        we performed pilot testing, administered four sets of research instruments, and applied statistical tools or techniques such as proportion, 
+        weighted mean, and Chi-square.`,
     },
     {
         slug: 'dlsp-fair-presenter',
@@ -85,9 +90,9 @@ export const items: Array<Award> = [
         name: 'De La Salle Philippines Academic and Cultural Fair', 
         award: 'Research Presenter', 
         location: 'Ozamiz, Philippines',
-        period: { from: new Date(2019, 1, 1) }, //not sure exact date
-        description:`I presented our quantitave research project on the relationship among multiple intelligences, academic achievement, 
-        and 21st century skills of grade 10 students during the DLSP academic and cultural fair participated by all 16 La Salle schools.`,
+        period: { from: new Date(2019, 0, 31) }, 
+        description:`I presented our quantitative research project on the relationship among multiple intelligences, academic achievement, 
+        and 21st-century skills of grade 10 students during the DLSP academic and cultural fair participated by all 16 La Salle schools.`,
     },
     {
         slug: 'dlsasmc-gs-valedictorian',

@@ -12,6 +12,7 @@ const Assets = {
 	DLSASMC: a('dlsasmc.jpg'),
 	USC: a('usc.svg'),
 	ASI: a('asi.svg'),
+	HappiBuy: a('happibuy.png'),
 	NeuroVis: a('neuro-vis2.png'),
 	Malware: a('malware.png'),
 	EnglishCharacters: a('english-characters.png'),
@@ -119,6 +120,8 @@ const Assets = {
 	Stockfish: a('stockfish.png'),
 	Arduino: a('arduino.svg'), 
 	Delphi: a('delphi.png'),
+	Locust: a('locust.svg'),
+	PyTest: a('pytest.svg'),
 };
 
 export default Assets;

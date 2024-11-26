@@ -4,7 +4,7 @@
 	import * as experiences from '@data/experience';
 
 	import { base } from '$app/paths';
-	import { getAssetURL } from '$lib/data/assets';
+	import Assets, { getAssetURL } from '$lib/data/assets';
 
 	import type { ProjectType, Skill } from '$lib/types';
 
@@ -50,7 +50,7 @@
 		projects.items.forEach((item) => {
 			if (item.skills.some((tech) => tech.slug === skill.slug)) {
 				out.push({
-					img: getAssetURL(item.logo),
+					img: getAssetURL(item.logo ? item.logo : Assets.Unknown),
 					display: `${item.name} (${getProjectType(item.types)})`,
 					name: item.name,
 					type: 'projects',
@@ -62,7 +62,7 @@
 		experiences.items.forEach((item) => {
 			if (item.skills.some((tech) => tech.slug === skill.slug)) {
 				out.push({
-					img: getAssetURL(item.logo),
+					img: getAssetURL(item.logo ? item.logo : Assets.Unknown),
 					display: `${item.name} @ ${item.company}`,
 					name: item.name,
 					type: 'experience',
@@ -89,7 +89,7 @@
 		</div>
 	{:else}
 		<div class="flex flex-col items-center overflow-x-hidden">
-			<Banner img={getAssetURL(data.skill.logo)}>
+			<Banner img={getAssetURL(data.skill.logo ? data.skill.logo : Assets.Unknown)}>
 				<MainTitle>{data.skill.name}</MainTitle>
 			</Banner>
 			<div class="pt-3 pb-1 overflow-x-hidden w-full">
