@@ -72,7 +72,7 @@ export const items = [
 		color: '#057ddc',
 		description: '',
 		logo: Assets.TypeScript,
-		name: 'Typescript',
+		name: 'TypeScript',
 		category: 'pro-lang'
 	}),
 	defineSkill({
@@ -176,7 +176,7 @@ export const items = [
 		color: '#f89939',
 		description: '',
 		logo: Assets.SciKitLearn,
-		name: 'SciKit-Learn',
+		name: 'Scikit-learn',
 		category: 'library'
 	}), 
 	defineSkill({
@@ -208,7 +208,7 @@ export const items = [
 		color: '#f44c2c',
 		description: '',
 		logo: Assets.Pytorch,
-		name: 'Pytorch',
+		name: 'PyTorch',
 		category: 'library'
 	}), 
 	defineSkill({
@@ -380,6 +380,22 @@ export const items = [
 		category: 'db'
 	}),
 	defineSkill({
+		slug: 'pytest',
+		color: '#009fe3',
+		description: '',
+		logo: Assets.PyTest,
+		name: 'PyTest',
+		category: 'test'
+	}), 
+	defineSkill({
+		slug: 'locust',
+		color: '#bcec4c',
+		description: '',
+		logo: Assets.Locust,
+		name: 'Locust',
+		category: 'test'
+	}), 
+	defineSkill({
 		slug: 'celery',
 		color: '#b7de65',
 		description: '',
@@ -420,6 +436,14 @@ export const items = [
 		category: ''
 	}), 
 	defineSkill({
+		slug: 'android-studio',
+		color: '#4484f3',
+		description: '',
+		logo: Assets.AndroidStudio,
+		name: 'Android Studio',
+		category: ''
+	}), 
+	defineSkill({
 		slug: 'arduino',
 		color: '#57adb3',
 		description: '',
@@ -435,23 +459,6 @@ export const items = [
 		name: 'Docker',
 		category: 'devops'
 	}), 
-	defineSkill({
-		slug: 'pytest',
-		color: '#009fe3',
-		description: '',
-		logo: Assets.PyTest,
-		name: 'PyTest',
-		category: 'test'
-	}), 
-	defineSkill({
-		slug: 'locust',
-		color: '#bcec4c',
-		description: '',
-		logo: Assets.Locust,
-		name: 'Locust',
-		category: 'test'
-	}), 
-	
 	
 	// defineSkill({
 	// 	slug: 'photoshop',

@@ -10,10 +10,10 @@ const getFileSrc = (file: string): string => `${base}/project-screenshots/${file
 export const items: Array<Project> = [
 	{
 		slug: 'happibuy',
-		color: 'plum',
+		color: 'aquamarine',
 		description: `This ongoing project is a backend for a full-featured e-commerce application using Django REST Framework. This RESTful API 
 						supports secure authentication and authorization with JSON Web Tokens (JWT) and CRUD (create, read, update, delete) operations, 
-						search, sorting, and pagination for managing staff, customers, products, product tags, collections, carts, and orders.
+						search, sorting, and pagination for managing staff, permissions, customers, collections, products, product tags, product reviews, carts, and orders.
 						<br><br>
 						This project also contains development and production-ready configuration for simple mail transfer protocol (SMTP), task or job queueing
 						with Celery and Redis, caching with Redis, and serving with Green Unicorn. The development environment has also been configured 
@@ -113,11 +113,11 @@ export const items: Array<Project> = [
 					  methods in terms of consistency in low-level features while also rivaling them in terms of semantics. Furthermore, ablation 
 					  experiments demonstrate the effectiveness of each component in Neuro-Vis for fMRI-to-image reconstruction.`,
 		shortDescription:
-			`A brain activity to image reconstruction deep learning research presented during the CMLDS 2024 
+			`A brain-activity-to-image-reconstruction deep learning research presented during the CMLDS 2024 
 			in Singapore and published in ACM`,
 		links: [{ to: 'https://dl.acm.org/doi/10.1145/3661725.3661744', label: 'Published Paper' }, 
+				{ to: 'https://youtu.be/fmPWTzOo61s', label: 'Introductory Video'},
 				{ to: 'https://github.com/ichiyan/neuro-vis', label: 'GitHub'}, 
-				{ to: 'https://youtu.be/fmPWTzOo61s', label: 'Introductory Video'}
 		],
 		logo: Assets.NeuroVis,
 		name: 'Neuro-Vis: Guided fMRI-to-Image Reconstruction',
@@ -213,7 +213,7 @@ export const items: Array<Project> = [
 			from: new Date(2023, 1, 27)
 		},
 		skills: getSkills('python', 'pandas', 'scikit-learn', 'numpy', 'matplotlib', 'jupyter'),
-		types: getProjectTypes(''), 
+		types: getProjectTypes('data-science-project'), 
 		screenshots: [
 			{
 				label: 'Sample predictions using KNN',
@@ -273,7 +273,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'data-scraping',
-		color: 'thistle',
+		color: 'coral',
 		description: `This repository contains the code and other resources for different data scraping projects. As of 2024, the projects include
 						scraping data from websites and videos with the latter implementing automatic speech recognition and diarization
 						using WhisperX.`,
@@ -290,10 +290,10 @@ export const items: Array<Project> = [
 	{
 		slug: 'data-science',
 		color: 'orchid',
-		description: `This repository contains data science-related mini projects and activities. As of 2024, 
+		description: `This repository contains data science-related mini-projects and activities. As of 2024, 
 		the uploaded projects cover exploratory data analysis, data visualization, data cleaning and preparation for modeling, 
 		and application of machine learning techniques for predictive modeling.`,
-		shortDescription: `Collection of data science mini projects or activities`,
+		shortDescription: `Collection of data science mini-projects or activities`,
 		links: [{ to: 'https://github.com/ichiyan/data-science-projects', label: 'GitHub' }],
 		logo: Assets.DataScience,
 		name: 'Collection of Data Science Projects',
@@ -305,7 +305,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'cpu-scheduling',
-		color: 'springgreen',
+		color: 'dodgerblue',
 		description: `This program simulates CPU scheduling algorithms and shows tabular and Gantt chart visualizations of the processes 
 						from scratch—without using existing CPU scheduling simulators and existing visualization libraries.
 						<br><br>
@@ -349,7 +349,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'rsa-encryption',
-		color: 'red',
+		color: 'aquamarine',
 		description: `This project implements and simulates the Rivest-Shamir-Adleman (RSA) encryption algorithm. RSA is an asymmetric public-private key cryptosystem 
 		 				wherein the encryption key is public and distinct from the decryption key, which is kept secret (private). An RSA user creates and publishes a 
 						public key based on two large prime numbers, along with an auxiliary value. The prime numbers are kept secret. Messages can be encrypted by anyone, 
@@ -401,8 +401,8 @@ export const items: Array<Project> = [
 						and employs the 50-move rule for claiming a draw. Players can also set a time limit per turn, view possible moves, 
 						undo their move, save the game, resume or start a new game, and view the list of moves in algebraic notation. When
 						playing against the computer, players can choose a side (black or white) and set the difficulty.`,
-		shortDescription: `A chess program built from scratch that supports player vs player and player vs computer. It 
-							is also equipped with timer, moves list, undo move, and new/resume game functions.`,
+		shortDescription: `A chess program built from scratch that supports player vs player and player vs computer. Players can also set the 
+							timer and difficulty, view the moves list, undo moves, and start/resume a game.`,
 		links: [{ to: 'https://github.com/ichiyan/Chess-Java', label: 'GitHub' }],
 		logo: Assets.Chess,
 		name: 'Chess (PvP and PvC)',
@@ -457,7 +457,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'interpolation',
-		color: 'aqua',
+		color: 'blue',
 		description: `The website discusses numerical interpolation—the process of fitting a function through given data—and 
 						one of the many methods called the Newton-Gregory forward polynomial approach which is an interpolation 
 						that uses equally spaced points. A calculator for this method is also provided which when given equally spaced
@@ -520,7 +520,7 @@ export const items: Array<Project> = [
 				src: getFileSrc('taskvenator-login.png')
 			},
 			{
-				label: 'avatar creation (sped up)',
+				label: 'avatar creation',
 				src: getFileSrc('taskvenator-avatar-creation.gif')
 			},
 			{
@@ -566,7 +566,7 @@ export const items: Array<Project> = [
 						and displays crucial performance metrics and insights. It also provides quick links and a quick overivew of trainees information (if logged in
 						employee is a trainer), active members, expiring subscriptions and products, and products that are low in inventory. These help facilitate
 						 informed decision-making, budget allocation, and strategy optimization.`,
-		shortDescription: `A proposed online storefront and gym management system for California Fitness Gym, allowing them to manage employees, 
+		shortDescription: `A proposed online storefront and gym management system for California Fitness Gym which allows them to manage employees, 
 							customers, products, orders, inventory, and sales`,
 		links: [{ to: 'https://github.com/ichiyan/CalFitGym', label: 'GitHub' }],
 		logo: Assets.CalFitGym,
@@ -733,7 +733,7 @@ export const items: Array<Project> = [
 	},
 	{
 		slug: 'openwhyd',
-		color: 'royalblue',
+		color: 'aqua',
 		description: `This is a mobile application for Openwhyd, a platform to collect & share musical gems from YouTube, SoundCloud, and more.
 		Specifically, it uses the Openwhyd API to allow users to create playlists of music tracks from various streaming platforms and to discover the music posted by other users. 
 		Through the mobile application, users can also listen to videos and audios more easily.`,
@@ -744,7 +744,7 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date(2021, 5, 24)
 		},
-		skills: getSkills('dart', 'flutter'),
+		skills: getSkills('dart', 'flutter', 'android-studio'),
 		types: getProjectTypes('mobile-application'), 
 		aspect_ratio: 'aspect-[9/16]',
 		width: 'w-55%',
@@ -802,7 +802,7 @@ export const items: Array<Project> = [
 	{
 		slug: 'finlit',
 		color: 'palegreen',
-		description: `This application is a minimum viable product (MVP) or prototype of a mobile simulation game designed to 
+		description: `This application is a prototype of a mobile simulation game designed to 
 					instill financial literacy among the younger generation in an <b>immersive visual-novel-like simulation</b> where they primarily 
 					play the role of a financial adviser catering to clients with varied financial issues. By experiencing and 
 					applying concepts learned in a realistic, controlled environment and by being able to connect with relatable 
@@ -817,7 +817,7 @@ export const items: Array<Project> = [
 					learning financial literacy.
 					<br><br>
 					With this project, we ranked 8th out of 250 participants and initial top 30 teams during the 2021 Diliman Solutions Challenge.`,
-		shortDescription: `An app that instills financial literacy through a simulation visual-novel like game, stock market simulation, 
+		shortDescription: `An app that instills financial literacy through a simulation visual-novel-like game, stock market simulation, 
 		info corner, and forum`, 
 		links: [
 			{ to: '', label: 'GitHub' }, 
@@ -828,7 +828,7 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date(2021, 2, 30)
 		},
-		skills: getSkills('dart', 'flutter', 'firebase'),
+		skills: getSkills('dart', 'flutter', 'firebase', 'android-studio'),
 		types: getProjectTypes('mobile-application'), 
 		awards: ['Diliman Solutions Challenge Top 8'], 
 		aspect_ratio: 'aspect-[9/20]',
@@ -859,10 +859,11 @@ export const items: Array<Project> = [
 	{
 		slug: 'search-and-rescue-robot',
 		color: 'silver',
-		description: `A rover type search and rescue robot prototype intended to be used in search and rescue operations in mines.
+		description: `A rover-type search and rescue robot prototype intended to be used in search and rescue operations in mines.
 						It is equipped with a first-person view camera, DHT11 temperature and humidity sensor,  MQ135 air quality sensor 
-						for detecting carbon dioxide levels, and MQ4 sensor for detecting methane levels.`,
-		shortDescription: `A rover type mine search and rescue robot prototype equipped with camera and gas sensors`,
+						for detecting carbon dioxide levels, and MQ4 sensor for detecting methane levels. A mobile application is used 
+						to control the robot and view gas levels.`,
+		shortDescription: `A rover-type mine search and rescue robot prototype equipped with camera and gas sensors`,
 		links: [
 			{ to: '', label: 'GitHub' },
 			{ to: 'https://youtu.be/4TE59BsnxTA', label: 'The Making'}

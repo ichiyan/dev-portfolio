@@ -2,6 +2,7 @@
 	import type { Experience } from '$lib/types';
 	import { theme } from '$lib/stores/theme';
 	import { computeExactDuration, getMonthName, getTimeDiff } from '$lib/utils/helpers';
+	import Markdown from '$lib/components/Markdown.svelte';
 	import Card from '../Card/Card.svelte';
 	import CardLogo from '../Card/CardLogo.svelte';
 	import CardTitle from '../Card/CardTitle.svelte';
@@ -77,7 +78,10 @@
 				</div>
 				<CardDivider />
 			</div>
-			<div class="experience-description text-[0.9em]">{experience.shortDescription}</div>
+			<div class="experience-description text-[0.9em] leading-relaxed">{experience.shortDescription}</div>
+			<!-- <Markdown
+				content={experience.description ?? 'This place is yet to be filled...'}
+			/> -->
 			<div class="flex flex-row flex-wrap mt-5">
 				{#key currentTheme}
 					{#each experience.skills as skill}

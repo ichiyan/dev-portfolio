@@ -53,7 +53,7 @@ export const items: Array<Award> = [
         period: { from: new Date(2019, 9, 25), to: new Date(2019, 9, 27) },
         description:`I was one of the USC paricipants for the 22nd O-COCOSDA international conference. The Oriental COCOSDA (O-COCOSDA) is 
         the Oriental chapter of COCOSDA, an acronym of the International Committee for the Coordination and Standardisation of Speech 
-        Databases and Assessment Techniques. he purpose of O-COCOSDA is to exchange ideas, share information, and discuss regional matters 
+        Databases and Assessment Techniques. The purpose of O-COCOSDA is to exchange ideas, share information, and discuss regional matters 
         on the creation, utilization, and dissemination of spoken language corpora of oriental languages and also on the assessment methods 
         of speech recognition/synthesis systems as well as promote speech research on oriental languages.`,
     },

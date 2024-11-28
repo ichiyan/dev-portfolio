@@ -86,6 +86,7 @@ const Assets = {
 	Hibernate: a('hibernate.svg'),
 	AdonisJs: a('adonis.png'),
 	Android: a('android.png'),
+	AndroidStudio: a('android-studio.png'),
 	Angular: a('angular.png'),
 	PostgreSQL: a('postgres.png'),
 	SQL: a('sql.svg'),

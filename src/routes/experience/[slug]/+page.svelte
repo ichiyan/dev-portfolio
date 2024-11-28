@@ -2,9 +2,10 @@
 	import { base } from '$app/paths';
 	import Assets, { getAssetURL } from '$lib/data/assets';
 	import { title } from '@data/experience';
-	import { getTimeDiff } from '$lib/utils';
+	import { getTimeDiff, computeExactDuration } from '$lib/utils';
 
 	import type { Experience } from '$lib/types';
+	
 
 	import CardLogo from '$lib/components/Card/CardLogo.svelte';
 	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
@@ -39,7 +40,8 @@
 						{data.experience.company} · {data.experience.location} · {data.experience.type}
 					</p>
 					<p class="font-300 text-0.9em text-[var(--tertiary-text)] m-y-2 text-center">
-						{getTimeDiff(data.experience.period.from, data.experience.period.to)}
+						<!-- {getTimeDiff(data.experience.period.from, data.experience.period.to)} -->
+						{computeExactDuration(data.experience.period.from, data.experience.period.to)}
 					</p>
 					<div class="w-75%">
 						<CardDivider />

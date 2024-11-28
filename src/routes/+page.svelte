@@ -26,21 +26,39 @@
 >
 	<div class="md:flex-1 gap-10px">
 		<MainTitle classes="md:text-left ">{name} {lastName},</MainTitle>
-		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
+		<br>
+		<p class="text-[var(--tertiary-text)] text-center md:text-left text-[1em] font-light leading-relaxed">
 			{description}
 		</p>
+		<br>
 		<div class="row justify-center md:justify-start p-y-15px p-x-0px gap-2">
 			{#each links as link}
 				<a
-					class="decoration-none"
+					class="decoration-none relative hover:z-5 text-inherit font-light"
 					href={`${isEmail(link.link) ? 'mailto:' : ''}${link.link}`}
 					target="_blank"
 					rel="noreferrer"
+					data-help={link.name}
 				>
-					<Icon icon={getPlatfromIcon(link.platform)} color={'var(--accent-text)'} size={'20px'} />
+					<Icon icon={link.icon} color={'var(--accent-text)'} size={'20px'}/>
 				</a>
 			{/each}
 		</div>
 	</div>
 	<Carrousel items={skills ?? skillsItems} />
 </div>
+
+<style lang="scss">
+	a:hover:after {
+				content: attr(data-help);
+				display: inline-block;
+				position: absolute;
+				width: max-content;
+				background-color: var(--secondary);
+				padding: 5px 10px;
+				left: 10px;
+				top: calc(100% + 0px);
+				border: 1px solid var(--border);
+				border-radius: 15px;
+			}
+</style>

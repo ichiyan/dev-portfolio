@@ -1,13 +1,13 @@
 import type { Color } from './utils/colors';
 
 export enum Platform {
-	GitHub = 'github',
-	StackOverflow = 'stackoverflow',
-	Twitter = 'twitter',
-	Linkedin = 'linkedin',
+	GitHub = 'GitHub',
+	StackOverflow = 'Stackoverflow',
+	Twitter = 'Twitter',
+	Linkedin = 'Linkedin',
 	Email = 'email',
-	Facebook = 'facebook',
-	Youtube = 'youtube'
+	Facebook = 'Facebook',
+	Youtube = 'YouTube'
 }
 
 export type Icon = `i-${string}-${string}`;
@@ -18,6 +18,7 @@ export enum ContractType {
 	SelfEmployed = 'Self-employed',
 	Freelance = 'Freelance',
 	Contract = 'Contract',
+	Subcontract = 'Subcontract',
 	Internship = 'Internship'
 }
 

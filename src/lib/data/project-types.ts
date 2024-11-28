@@ -4,6 +4,10 @@ import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
 
 export const items: Array<ProjectType> = [
     {
+        slug: 'data-science-project', 
+        name: 'Data Science Project',
+    }, 
+    {
         slug: 'web-application', 
         name: 'Web Application',
     }, 
@@ -18,10 +22,6 @@ export const items: Array<ProjectType> = [
     {
         slug: 'console-application', 
         name: 'Console Application',
-    }, 
-    {
-        slug: 'data-science-project', 
-        name: 'Data Science Project',
     }, 
     {
         slug: 'robotics-project', 

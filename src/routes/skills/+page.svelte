@@ -29,6 +29,35 @@
 			<p class="font-300">Could not find anything...</p>
 		</div>
 	{:else}
+		<div class="pt-5 pb-15 gap-3 m-y-auto flex-1">
+			<!-- <h3 class="font-500">Technical Proficiencies</h3> -->
+			<table class="table-auto border-separate border-spacing-y-4">
+				<thead>
+					<tr>
+						<th class="w-1/4"></th>
+						<th class="w-3/4"></th>
+					</tr>
+				</thead>
+				<tbody class="align-text-top leading-relaxed">
+					<tr>
+						<td class="font-normal">Data Science and Analytics:</td>
+						<td class="font-light">Python, NumPy, Pandas, Seaborn, Scikit-learn, PyTorch, HuggingFace, BeautifulSoup, Selenium, Google Colab, Paperspace</td>
+					</tr>
+					<tr>
+						<td class="font-normal align-text-top">Web Development:</td>
+						<td class="font-light align-text-top">HTML, CSS, Sass, JavaScript, TypeScript, SQL, ReactJS, Laravel, Django, Java, Java Spring, Celery, Redis, MySQL, Dbeaver, DataGrip</td>
+					</tr>
+					<tr>
+						<td class="font-normal align-text-top">Mobile Development:</td>
+						<td class="font-light align-text-top">Dart, Flutter, Android Studio</td>
+					</tr>
+					<tr>
+						<td class="font-normal align-text-top">Others:</td>
+						<td class="font-light align-text-top">C, R, Git, GitHub, Visual Studio Code, IntelliJ IDEA, Docker</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 		<div class="col mt-5 gap-7">
 			{#each result as group (group.category.slug)}
 				<div class="col gap-5 mb-7">
