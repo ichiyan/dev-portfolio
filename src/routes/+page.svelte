@@ -25,7 +25,7 @@
 	class="col self-center flex-1 md:flex-row md:slef-stretch justify-center lg:justify-between items-center p-y-0px p-x-10px"
 >
 	<div class="md:flex-1 gap-10px">
-		<MainTitle classes="md:text-left ">{name} {lastName},</MainTitle>
+		<MainTitle classes="md:text-left font-extrabold">{name} {lastName},</MainTitle>
 		<br>
 		<p class="text-[var(--tertiary-text)] text-center md:text-left text-[1em] font-light leading-relaxed">
 			{description}
