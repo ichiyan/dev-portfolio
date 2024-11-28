@@ -1,4 +1,4 @@
-import{A as e}from"./UIcon.49f91b2a.js";import{b as t}from"./skills.bd9ea3d4.js";import{C as o}from"./types.5d7d966d.js";const i=[{slug:"software-engineer",company:"Alliance Software Inc.",description:`<ul>
+import{A as e}from"./UIcon.a7dd649c.js";import{b as t}from"./skills.858daf4c.js";import{C as o}from"./types.5d7d966d.js";const i=[{slug:"software-engineer",company:"Alliance Software Inc.",description:`<ul>
 						<li>Worked on the front and back-end development of a web-based supply chain management system and e-commerce system using ReactJS, Java Spring, and MySQL</li>
 						<li>Wrote SQL scripts for data fetching, merging, aggregating, and more to create reports</li>
 						<li>Streamlined development processes by creating reusable components that could be shared across different parts of the application</li>
