@@ -13,7 +13,7 @@ const categories = [
 	defineSkillCategory({ name: 'Database-Related', slug: 'db' }),
 	defineSkillCategory({ name: 'ORMs', slug: 'orm' }),
 	defineSkillCategory({ name: 'DevOps', slug: 'devops' }),
-	defineSkillCategory({ name: 'Testing', slug: 'test' }),
+	defineSkillCategory({ name: 'Testing and Observability', slug: 'test-observability' }),
 	defineSkillCategory({ name: 'Dev Tools', slug: 'devtools' }),
 	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
@@ -164,6 +164,14 @@ export const items = [
 		category: 'library'
 	}),
 	defineSkill({
+		slug: 'resilience4j',
+		color: 'azure',
+		description: '',
+		logo: Assets.Resilience4j,
+		name: 'Resilience4j',
+		category: 'library'
+	}),
+	defineSkill({
 		slug: 'pandas',
 		color: '#14045b',
 		description: '',
@@ -292,6 +300,14 @@ export const items = [
 		category: 'framework'
 	}),
 	defineSkill({
+		slug: 'kafka',
+		color: 'silver',
+		description: '',
+		logo: Assets.Kafka,
+		name: 'Apache Kafka',
+		category: 'framework'
+	}),
+	defineSkill({
 		slug: 'flutter',
 		color: '#5bc9fc',
 		description: '',
@@ -321,6 +337,22 @@ export const items = [
 		description: '',
 		logo: Assets.MySQL,
 		name: 'MySQL',
+		category: 'db' //rdbms
+	}), 
+	defineSkill({
+		slug: 'mongodb',
+		color: '#6cbc64',
+		description: '',
+		logo: Assets.MongoDB,
+		name: 'MongoDB',
+		category: 'db' //rdbms
+	}), 
+	defineSkill({
+		slug: 'flyway',
+		color: '#cb0108',
+		description: '',
+		logo: Assets.Flyway,
+		name: 'Flyway',
 		category: 'db' //rdbms
 	}), 
 	// defineSkill({
@@ -385,7 +417,7 @@ export const items = [
 		description: '',
 		logo: Assets.PyTest,
 		name: 'PyTest',
-		category: 'test'
+		category: 'test-observability'
 	}), 
 	defineSkill({
 		slug: 'locust',
@@ -393,7 +425,23 @@ export const items = [
 		description: '',
 		logo: Assets.Locust,
 		name: 'Locust',
-		category: 'test'
+		category: 'test-observability'
+	}), 
+	defineSkill({
+		slug: 'grafana',
+		color: '#f4af34',
+		description: '',
+		logo: Assets.Grafana,
+		name: 'Grafana',
+		category: 'test-observability'
+	}), 
+	defineSkill({
+		slug: 'prometheus',
+		color: '#e4542c',
+		description: '',
+		logo: Assets.Prometheus,
+		name: 'Prometheus',
+		category: 'test-observability'
 	}), 
 	defineSkill({
 		slug: 'celery',
@@ -412,6 +460,14 @@ export const items = [
 		category: ''
 	}), 
 	defineSkill({
+		slug: 'wandb',
+		color: '#fccc34',
+		description: '',
+		logo: Assets.Wandb,
+		name: 'Weights & Biases',
+		category: ''
+	}), 
+	defineSkill({
 		slug: 'google-maps',
 		color: '#34ac54',
 		description: '',
@@ -420,19 +476,19 @@ export const items = [
 		category: ''
 	}), 
 	defineSkill({
+		slug: 'keycloak',
+		color: '#11b1d6',
+		description: '',
+		logo: Assets.Keycloak,
+		name: 'Keycloak',
+		category: ''
+	}), 
+	defineSkill({
 		slug: 'stockfish',
 		color: '#97b991',
 		description: '',
 		logo: Assets.Stockfish,
 		name: 'Stockfish',
-		category: ''
-	}), 
-	defineSkill({
-		slug: 'wandb',
-		color: '#fccc34',
-		description: '',
-		logo: Assets.Wandb,
-		name: 'Weights & Biases',
 		category: ''
 	}), 
 	defineSkill({
@@ -457,6 +513,14 @@ export const items = [
 		description: '',
 		logo: Assets.Docker,
 		name: 'Docker',
+		category: 'devops'
+	}), 
+	defineSkill({
+		slug: 'kubernetes',
+		color: '#1d63ed',
+		description: '',
+		logo: Assets.Kubernetes,
+		name: 'Kubernetes',
 		category: 'devops'
 	}), 
 	

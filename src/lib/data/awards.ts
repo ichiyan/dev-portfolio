@@ -24,7 +24,7 @@ export const items: Array<Award> = [
         name: 'University of San Carlos', 
         award: 'magna cum laude, cum laude caroli sancti', 
         location: 'Cebu, Philippines',
-        period: { from: new Date(2023, 4, 22) },
+        period: { from: new Date(2024, 4, 20) },
         description:`Apart from the standard Latin honor, I was also granted the cum laude caroli sancti (with praise of San Carlos)
         award for participating in activities exhibiting professional competence and skills (Scientia), noble character (Virtus), 
         and dedication to social transformation (Devotio).`,

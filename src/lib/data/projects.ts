@@ -175,6 +175,102 @@ export const items: Array<Project> = [
 		]
 	},
 	{
+		slug: 'konbi',
+		color: 'mediumseagreen',
+		description: `This online shop project applies the microservices architecture using Java Spring Boot, mainly 
+					  implementing product, inventory, order, notification, and API gateway services. 
+					 <br><br>
+					  The project also implements:
+					  <br>
+					  <ul>
+					  	<li>front end using AngularJS</li>
+					  	<li>user authentication using Keycloak</li>
+					  	<li>inter-service synchronous communication using REST Client</li>
+						<li>event-driven architecture using Apache Kafka</li>
+						<li>fault tolerance: circuit breaker pattern, time limiter, and retry using Relience4j</li>
+						<li>application observability using Grafana Loki for centralized logging, Grafana Tempo for distributed tracing, and Prometheus for metrics monitoring</li>
+						<li>API documentation using Swagger</li>
+						<li>Kubernetes deployment</li>
+					  </ul>
+						`, 
+		shortDescription: `An online shop applying microservices architecture, Keycloak security, circuit breaker pattern, 
+							centralized logging, distributed tracing, API documentation, and Kubernetes deployment`,
+		links: [  
+			{ to: 'https://github.com/ichiyan/konbi', label: 'GitHub'}
+		],
+		logo: Assets.Konbi,
+		name: 'Konbi Shop Microservices',
+		period: {
+			from: new Date(2024, 11, 30)
+		},
+		skills: getSkills('java', 'spring', 'kafka', 'sql', 'mysql', 'mongodb', 'flyway', 'datagrip', 'docker', 'kubernetes', 'grafana', 'prometheus', 'resilience4j', 'keycloak'),
+		types: getProjectTypes('web-application'), 
+		screenshots: [
+			{
+				label: 'login via Keycloak',
+				src: getFileSrc('konbi-login.png')
+			},
+			{
+				label: 'products',
+				src: getFileSrc('konbi-products.png')
+			},
+			{
+				label: 'add product',
+				src: getFileSrc('konbi-add-product.png')
+			},
+			{
+				label: 'order product',
+				src: getFileSrc('konbi-order.png')
+			},
+			{
+				label: 'mail notification',
+				src: getFileSrc('konbi-mail.png')
+			},
+			{
+				label: 'API documentation',
+				src: getFileSrc('konbi-api-docs.png')
+			},
+			{
+				label: 'Kafka UI',
+				src: getFileSrc('konbi-kafka-topics.png')
+			},
+			{
+				label: 'Logs via Grafana Loki',
+				src: getFileSrc('konbi-logs.png')
+			},
+			{
+				label: 'Distributed tracing via Grafana Tempo',
+				src: getFileSrc('konbi-logs.png')
+			},
+			{
+				label: 'Metrics dashboard via Grafana and Prometheus',
+				src: getFileSrc('konbi-metrics-dashboard.png')
+			},
+			{
+				label: 'Docker containers',
+				src: getFileSrc('konbi-docker.png')
+			},
+		]
+	},
+	{
+		slug: 'books-api',
+		color: 'maroon',
+		description: `This project is A REST API to create, retrieve, update, and delete book and author information developed using Java Spring Boot.
+						It also supports nested objects and pagination.`, 
+		shortDescription: `A REST API to create, retrieve, update, and delete book and author information developed using Java Spring Boot`,
+		links: [  
+			{ to: 'https://github.com/ichiyan/books-api', label: 'GitHub'}
+		],
+		logo: Assets.BooksAPI,
+		name: 'Books API',
+		period: {
+			from: new Date(2024, 11, 30)
+		},
+		skills: getSkills('java', 'spring', 'sql', 'mysql', 'datagrip', 'docker'),
+		types: getProjectTypes('web-application'), 
+		screenshots: []
+	},
+	{
 		slug: 'malware-prediction',
 		color: 'red',
 		description:
@@ -298,7 +394,7 @@ export const items: Array<Project> = [
 		logo: Assets.DataScience,
 		name: 'Collection of Data Science Projects',
 		period: {
-			from: new Date()
+			from: new Date(2024, 11, 30)
 		},
 		skills: getSkills('python', 'pandas', 'scikit-learn', 'numpy', 'matplotlib', 'seaborn', 'jupyter'),
 		types: getProjectTypes('data-science-project')

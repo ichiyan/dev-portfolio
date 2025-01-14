@@ -14,6 +14,8 @@ const Assets = {
 	ASI: a('asi.svg'),
 	HappiBuy: a('happibuy.png'),
 	NeuroVis: a('neuro-vis2.png'),
+	Konbi: a('konbi-products.png'),
+	BooksAPI: a('books.jpg'),
 	Malware: a('malware.png'),
 	EnglishCharacters: a('english-characters.png'),
 	DataScraping: a('data-scraping.png'),
@@ -40,7 +42,7 @@ const Assets = {
 	FastApi: a('fastapi'),
 	Flask: a('flask.svg'),
 	Go: a('go.svg'),
-	Kafka: a('kafka.svg'),
+	Kafka: a('kafka.svg', 'kafka-dark.svg'),
 	Neo4j: a('neo4j.svg'),
 	Nginx: a('nginx.svg'),
 	Numpy: a('numpy.svg'),
@@ -91,6 +93,7 @@ const Assets = {
 	PostgreSQL: a('postgres.png'),
 	SQL: a('sql.svg'),
 	MySQL: a('mysql.svg', 'mysql-dark.svg'),
+	Flyway: a('flyway.svg'),
 	Dbeaver: a('dbeaver.svg'),
 	DataGrip: a('datagrip.svg'),
 	Redis: a('redis.svg'),
@@ -121,8 +124,12 @@ const Assets = {
 	Stockfish: a('stockfish.png'),
 	Arduino: a('arduino.svg'), 
 	Delphi: a('delphi.png'),
+	Resilience4j: a('resilience4j.png', 'resilience4j-dark.png'),
 	Locust: a('locust.svg'),
 	PyTest: a('pytest.svg'),
+	Grafana: a('grafana.svg'),
+	Prometheus: a('prometheus.svg'), 
+	Keycloak: a('keycloak.png'),
 };
 
 export default Assets;
