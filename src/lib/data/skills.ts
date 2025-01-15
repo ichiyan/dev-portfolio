@@ -292,6 +292,14 @@ export const items = [
 		category: 'framework'
 	}),
 	defineSkill({
+		slug: 'angular',
+		color: '#db0434',
+		description: '',
+		logo: Assets.Angular,
+		name: 'Angular',
+		category: 'framework'
+	}),
+	defineSkill({
 		slug: 'spring',
 		color: '#60bc34',
 		description: '',

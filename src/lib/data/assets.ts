@@ -89,7 +89,7 @@ const Assets = {
 	AdonisJs: a('adonis.png'),
 	Android: a('android.png'),
 	AndroidStudio: a('android-studio.png'),
-	Angular: a('angular.png'),
+	Angular: a('angular.svg'),
 	PostgreSQL: a('postgres.png'),
 	SQL: a('sql.svg'),
 	MySQL: a('mysql.svg', 'mysql-dark.svg'),

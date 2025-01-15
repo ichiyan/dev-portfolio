@@ -12,8 +12,8 @@ export const items: Array<Project> = [
 		slug: 'happibuy',
 		color: 'aquamarine',
 		description: `This ongoing project is a backend for a full-featured e-commerce application using Django REST Framework. This RESTful API 
-						supports secure authentication and authorization with JSON Web Tokens (JWT) and CRUD (create, read, update, delete) operations, 
-						search, sorting, and pagination for managing staff, permissions, customers, collections, products, product tags, product reviews, carts, and orders.
+						supports secure authentication and authorization with JSON Web Tokens (JWT), CRUD (create, read, update, delete) operations, 
+						searching, sorting, and pagination for managing staff, permissions, customers, collections, products, product tags, product reviews, carts, and orders.
 						<br><br>
 						This project also contains development and production-ready configuration for simple mail transfer protocol (SMTP), task or job queueing
 						with Celery and Redis, caching with Redis, and serving with Green Unicorn. The development environment has also been configured 
@@ -183,7 +183,7 @@ export const items: Array<Project> = [
 					  The project also implements:
 					  <br>
 					  <ul>
-					  	<li>front end using AngularJS</li>
+					  	<li>front end using Angular</li>
 					  	<li>user authentication using Keycloak</li>
 					  	<li>inter-service synchronous communication using REST Client</li>
 						<li>event-driven architecture using Apache Kafka</li>
@@ -203,7 +203,7 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date(2024, 11, 30)
 		},
-		skills: getSkills('java', 'spring', 'kafka', 'sql', 'mysql', 'mongodb', 'flyway', 'datagrip', 'docker', 'kubernetes', 'grafana', 'prometheus', 'resilience4j', 'keycloak'),
+		skills: getSkills('java', 'angular', 'spring', 'kafka', 'sql', 'mysql', 'mongodb', 'flyway', 'datagrip', 'docker', 'kubernetes', 'grafana', 'prometheus', 'resilience4j', 'keycloak'),
 		types: getProjectTypes('web-application'), 
 		screenshots: [
 			{
@@ -255,8 +255,10 @@ export const items: Array<Project> = [
 	{
 		slug: 'books-api',
 		color: 'maroon',
-		description: `This project is A REST API to create, retrieve, update, and delete book and author information developed using Java Spring Boot.
-						It also supports nested objects and pagination.`, 
+		description: `This project is A REST API to create, retrieve, update, and delete book and author information developed using Java Spring Boot
+						with support for nested objects and pagination.
+						<br><br>
+						Unit tests using Mockito and integration tests using MockMvc were also implemented and conducted.`, 
 		shortDescription: `A REST API to create, retrieve, update, and delete book and author information developed using Java Spring Boot`,
 		links: [  
 			{ to: 'https://github.com/ichiyan/books-api', label: 'GitHub'}
@@ -734,7 +736,7 @@ export const items: Array<Project> = [
 	{
 		slug: 'doggo',
 		color: 'hotpink',
-		description: `This web application was developed specifically for the Philippine Canine Club as the main stakeholder in mind. 
+		description: `This web application was developed specifically for the Philippine Canine Club, Inc. (PCCI) as the main stakeholder in mind. 
 						Its main features addressing the following goals: (1) to provide a platform to buy/sell/adopt dogs coming from 
 						registered PCCI members, (2) to support local moral dog breeders and help potential dog owners find trusted sources, 
 						and (3) to promote and monitor ethical dog breeding within the PCCI members.
