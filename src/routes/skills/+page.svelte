@@ -45,7 +45,7 @@
 					</tr>
 					<tr>
 						<td class="font-normal align-text-top">Web Development:</td>
-						<td class="font-light align-text-top">HTML, CSS, Sass, JavaScript, TypeScript, SQL, ReactJS, Laravel, Django, Java, Java Spring Boot, Kafka, Celery, Redis, MySQL, Dbeaver, DataGrip</td>
+						<td class="font-light align-text-top">HTML, CSS, Sass, JavaScript, TypeScript, PHP, SQL, ReactJS, Laravel, Python, Django, Java, Java Spring Boot, Java Hibernate, Kafka, Celery, Redis, MySQL, Dbeaver, DataGrip</td>
 					</tr>
 					<tr>
 						<td class="font-normal align-text-top">Mobile Development:</td>

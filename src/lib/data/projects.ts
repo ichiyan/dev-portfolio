@@ -203,7 +203,7 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date(2024, 11, 30)
 		},
-		skills: getSkills('java', 'angular', 'spring', 'kafka', 'sql', 'mysql', 'mongodb', 'flyway', 'datagrip', 'docker', 'kubernetes', 'grafana', 'prometheus', 'resilience4j', 'keycloak'),
+		skills: getSkills('java', 'angular', 'spring', 'hibernate', 'kafka', 'sql', 'mysql', 'mongodb', 'flyway', 'datagrip', 'docker', 'kubernetes', 'grafana', 'prometheus', 'resilience4j', 'keycloak'),
 		types: getProjectTypes('web-application'), 
 		screenshots: [
 			{
@@ -268,7 +268,7 @@ export const items: Array<Project> = [
 		period: {
 			from: new Date(2024, 11, 30)
 		},
-		skills: getSkills('java', 'spring', 'sql', 'mysql', 'datagrip', 'docker'),
+		skills: getSkills('java', 'spring', 'hibernate', 'sql', 'mysql', 'datagrip', 'docker'),
 		types: getProjectTypes('web-application'), 
 		screenshots: []
 	},

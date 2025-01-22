@@ -308,6 +308,15 @@ export const items = [
 		category: 'framework'
 	}),
 	defineSkill({
+		slug: 'hibernate',
+		color: '#bcac7c',
+		description: '',
+		logo: Assets.Hibernate,
+		name: 'Java Hibernate',
+		// category: 'orm'
+		category: 'framework'
+	}),
+	defineSkill({
 		slug: 'kafka',
 		color: 'silver',
 		description: '',
@@ -363,14 +372,6 @@ export const items = [
 		name: 'Flyway',
 		category: 'db' //rdbms
 	}), 
-	// defineSkill({
-	// 	slug: 'hibernate',
-	// 	color: 'brown',
-	// 	description: '',
-	// 	logo: Assets.Hibernate,
-	// 	name: 'Java Hibernate',
-	// 	category: 'orm'
-	// }),
 	defineSkill({
 		slug: 'dbeaver',
 		color: '#a48474',
