@@ -42,7 +42,7 @@ export const items: Array<Experience> = [
 		color: 'orange',
 		links: [],
 		logo: Assets.Unknown,
-		shortDescription: `Developed mobile applications for the client's delivery services.`
+		shortDescription: `Developed mobile applications for the client's delivery services`
 	},
 ];
 

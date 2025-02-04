@@ -31,7 +31,7 @@ const Assets = {
 	FinLit: a('finlit.png'),
 	SAR: a('sar.jpg'),
 	DataScience: a('data-science.png'),
-	CameraCaptureShapeDetection: a('camera-and-shape-detection.png'),
+	CameraCaptureShapeRecognition: a('camera-and-shape-recognition.png'),
 	//tools
 	AWS: a('aws.svg'),
 	Bootstrap: a('bootstrap.svg'),

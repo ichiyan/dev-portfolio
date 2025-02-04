@@ -324,22 +324,22 @@ export const items: Array<Project> = [
 		]
 	},
 	{
-		slug: 'camera-capture-shape-detection',
+		slug: 'camera-capture-shape-recognition',
 		color: 'royalblue',
 		description: `The Java implementation of this project utilizes OpenCV to capture images using the device's camera and to provide real-time
-						shape detection. The Python implementation also uses OpenCV for capturing photos but the non-real-time shape detection
+						shape recognition. The Python implementation also uses OpenCV for capturing photos but the non-real-time shape recognition
 						is coded from scratch—without using existing libraries like OpenCV for processing images and detecting shapes. 
 						<br><br>
-						The Python implementation attempts to code from scratch the algorithms used for shape detection: Gaussian blur, Canny edge detection, 
+						The Python implementation attempts to code from scratch the algorithms used for shape detection and recognition: Gaussian blur, Canny edge detection, 
 						Suzuki contour, finding the perimeter, and Ramer-Douglas-Peucker (RDP) algorithm for simplifying the contours and reducing the number
 						of points.`,
-		shortDescription: `Captures photos using the device's camera and also provides real-time shape detection (for Java implementation)`,
+		shortDescription: `Captures photos using the device's camera and also provides real-time shape recognition (for Java implementation)`,
 		links: [
-			{ to: 'https://github.com/ichiyan/Camera-Capture-and-Shape-Detection-Java', label: 'Java Implementation GitHub' }, 
-			{ to: 'https://github.com/ichiyan/Camera-and-Shape-Recognition', label: 'Python Implementation GitHub' }
+			{ to: 'https://github.com/ichiyan/Camera-Capture-and-Shape-Recognition-Java', label: 'Java Implementation GitHub' }, 
+			{ to: 'https://github.com/ichiyan/Camera-Capture-and-Shape-Recognition', label: 'Python Implementation GitHub' }
 		],
-		logo: Assets.CameraCaptureShapeDetection,
-		name: 'Camera Capture and Shape Detection',
+		logo: Assets.CameraCaptureShapeRecognition,
+		name: 'Camera Capture and Shape Recognition',
 		period: {
 			from: new Date(2022, 10, 1) //not sure exact datr
 		},
@@ -356,15 +356,15 @@ export const items: Array<Project> = [
 				src: getFileSrc('camera-save.png')
 			},
 			{
-				label: 'detect shapes (Java)',
+				label: 'detect and identify shapes (Java)',
 				src: getFileSrc('camera-shape-detection1.png')
 			},
 			{
-				label: 'detect shapes (Java)',
+				label: 'detect and identify shapes (Java)',
 				src: getFileSrc('camera-shape-detection2.png')
 			},
 			{
-				label: 'detect shapes (Python)',
+				label: 'detect and identify shapes (Python)',
 				src: getFileSrc('shape-detection.png')
 			},
 		]
