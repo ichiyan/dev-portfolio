@@ -48,10 +48,10 @@ export const items: Array<Award> = [
         slug: 'ococosda-participant',
         color: 'orchid',
         name: '22nd Oriental COCOSDA', 
-        award: 'Paricipant', 
+        award: 'Participant', 
         location: 'Univerity of San Carlos, Cebu',
         period: { from: new Date(2019, 9, 25), to: new Date(2019, 9, 27) },
-        description:`I was one of the USC paricipants for the 22nd O-COCOSDA international conference. The Oriental COCOSDA (O-COCOSDA) is 
+        description:`I was one of the USC participants for the 22nd O-COCOSDA international conference. The Oriental COCOSDA (O-COCOSDA) is 
         the Oriental chapter of COCOSDA, an acronym of the International Committee for the Coordination and Standardisation of Speech 
         Databases and Assessment Techniques. The purpose of O-COCOSDA is to exchange ideas, share information, and discuss regional matters 
         on the creation, utilization, and dissemination of spoken language corpora of oriental languages and also on the assessment methods 
