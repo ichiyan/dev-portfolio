@@ -38,7 +38,7 @@ export const links: Array<{ name: string; icon: Icons; link: string;}> = [
 	{
 		name: "resume",
 		icon: Icons.Resume,
-		link: `${base}/Balisacan-Gabriela-CV.pdf`, 
+		link: `${base}/BalisacanGabrielaCV.pdf`, 
 	},
 ];
 

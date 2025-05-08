@@ -73,7 +73,7 @@
 										{education.location}
 									</div>
 									<CardDivider />
-									<div class="row items-center gap-2">
+									<!-- <div class="row items-center gap-2">
 										<UIcon icon="i-carbon-calendar" classes="text-1.25em" />
 										{getDatePeriod(education.period.from, education.period.to)}
 									</div>
@@ -82,7 +82,7 @@
 										<UIcon icon="i-carbon-time" />
 										{getTimeDiff(education.period.from, education.period.to)}
 									</div>
-									<CardDivider />
+									<CardDivider /> -->
 									<div class="py-5">
 										<p>Graduated 
 											{#each education.honors as honor, i}
