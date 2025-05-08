@@ -76,12 +76,14 @@
 											{award.location}
 										</div>
 										<CardDivider />
-										<div class="row items-center gap-2">
-											<UIcon icon="i-carbon-calendar" classes="text-1.25em" />
-											<!-- {getDatePeriod(award.period.from, award.period.to)} -->
-											{`${getMonthName(award.period.from.getMonth())} ${award.period.from.getFullYear()}`}
-										</div>
-										<CardDivider />
+										{#if award.period}
+											<div class="row items-center gap-2">
+												<UIcon icon="i-carbon-calendar" classes="text-1.25em" />
+												<!-- {getDatePeriod(award.period.from, award.period.to)} -->
+												{`${getMonthName(award.period.from.getMonth())} ${award.period.from.getFullYear()}`}
+											</div>
+											<CardDivider />
+										{/if}
 										<div class="py-5 leading-relaxed">
 											{award.description}
 										</div>

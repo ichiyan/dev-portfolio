@@ -102,7 +102,7 @@ export interface Education<S extends string = string> extends Item<S> {
 export interface Award<S extends string = string> extends Omit<Item<S>, 'logo' | 'shortDescription' | 'screenshots'>  {
 	award: string;
 	location: string;
-	period: {
+	period?: {
 		from: Date;
 		to?: Date;
 	};
